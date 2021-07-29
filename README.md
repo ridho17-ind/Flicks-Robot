@@ -15,10 +15,9 @@ telegram bot that can help you to manage your group, kaneki-ex is the best
 
 ##### found me on telegram [Kaneki-ex](https://t.me/kanekiexbot)
 
-## <p align="center">DEPLOY</p>
+###  Heroku
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/rizkyoye/Kaneki-ex">
-  <img src="https://img.shields.io/badge/Deploy%10To%10Heroku-pink?style=flat&logo=heroku" width="225" height="40.100" /></a></p>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rizkyoye/Kaneki-ex/main)
 
 ## OWNER:
 
