@@ -8,5 +8,5 @@
     <a href="https://pypi.org/project/Telethon/"> <img src="https://img.shields.io/pypi/v/telethon?color=yellow&label=telethon&logo=python&logoColor=green&style=for-the-badge" /></a
 </p>
 <p align="center">
-<img src="https://telegra.ph/file/977b589916bb9ea7de1a4.jpg">
+<img src="https://telegra.ph/file/f1c6b3260967f1b7f7a27.jpg">
 </p>
