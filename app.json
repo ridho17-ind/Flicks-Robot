@@ -173,7 +173,7 @@
       "weeb",
       "group",
       "manager",
-      "jisoox"
+      "kanekiex"
       
    ],
    "buildpacks": [
@@ -184,8 +184,8 @@
       "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
     }
   ],
-   "name": "JisooX",
+   "name": "Kaneki-ex",
    "repository": "https://github.com/rizkyoye/Kaneki-ex",
    "success_url": "https://telegram.dog/kanekiexbot",
-   "logo": "https://telegra.ph/file/d41f6ad5e6a68fa1b7134.jpg"
+   "logo": "https://telegra.ph/file/0d54b7099dabb7da70844.jpg"
 }
