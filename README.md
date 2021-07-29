@@ -1,4 +1,4 @@
-# kaneki
+# Kaneki-ex
 </p>
 <p align="center">
     <a href="https://github.com/rizkyoye/kaneki"> <img src="https://img.shields.io/github/repo-size/noob-kittu/YoneRobot?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
