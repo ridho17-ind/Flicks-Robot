@@ -10,3 +10,19 @@
 <p align="center">
 <img src="https://telegra.ph/file/f1c6b3260967f1b7f7a27.jpg">
 </p>
+telegram bot that can help you to manage your group, kaneki-ex is the best
+</p>
+
+##### found me on telegram [Kaneki-ex](https://t.me/kanekiexbot)
+
+## <p align="center">DEPLOY</p>
+
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/rizkyoye/Kaneki-ex">
+  <img src="https://img.shields.io/badge/Deploy%10To%10Heroku-pink?style=flat&logo=heroku" width="225" height="40.100" /></a></p>
+
+## OWNER:
+
+<a href="https://t.me/rizexx"><img src="https://img.shields.io/badge/owner%20repo%3F-rizexx-green?&style=flat-square?&logo=telegram" width=220px></a></p>
+
+
+
