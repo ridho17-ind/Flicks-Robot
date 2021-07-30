@@ -1,12 +1,12 @@
-from LaylaRobot import dispatcher
-from LaylaRobot.modules.helper_funcs.chat_status import (
+from Kaneki import dispatcher
+from Kaneki.modules.helper_funcs.chat_status import (
     bot_admin,
     is_bot_admin,
     is_user_ban_protected,
     is_user_in_chat,
 )
-from LaylaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from LaylaRobot.modules.helper_funcs.filters import CustomFilters
+from Kaneki.modules.helper_funcs.extraction import extract_user_and_text
+from Kaneki.modules.helper_funcs.filters import CustomFilters
 from telegram import Update, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
