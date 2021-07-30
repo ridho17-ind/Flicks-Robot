@@ -1,9 +1,9 @@
 from time import sleep
 
-import LaylaRobot.modules.sql.global_bans_sql as gban_sql
-import LaylaRobot.modules.sql.users_sql as user_sql
-from LaylaRobot import DEV_USERS, OWNER_ID, dispatcher
-from LaylaRobot.modules.helper_funcs.chat_status import dev_plus
+import Kaneki.modules.sql.global_bans_sql as gban_sql
+import Kaneki.modules.sql.users_sql as user_sql
+from Kaneki import DEV_USERS, OWNER_ID, dispatcher
+from Kaneki.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
@@ -146,5 +146,5 @@ BUTTON_HANDLER = CallbackQueryHandler(callback_button, pattern="db_.*")
 dispatcher.add_handler(DB_CLEANUP_HANDLER)
 dispatcher.add_handler(BUTTON_HANDLER)
 
-__mod_name__ = "DB Cleanup"
+__mod_name__ = "ᴅʙ ᴄʟᴇᴀɴ"
 __handlers__ = [DB_CLEANUP_HANDLER, BUTTON_HANDLER]
