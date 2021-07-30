@@ -1,5 +1,5 @@
-from LaylaRobot import pbot as app
-from LaylaRobot.utils.dbfunc import get_couple, save_couple
+from Kaneki import pbot as app
+from Kaneki.utils.dbfunc import get_couple, save_couple
 from pyrogram import filters
 import random
 from datetime import datetime
@@ -77,7 +77,7 @@ __New couple of the day may be chosen at 12AM {tomorrow}__"""
 
 
 __help__ = """
- ❍ /couples - To Choose Couple Of The Day
+  /couples - To Choose Couple Of The Day
  """
-__mod_name__ = "Couples"
+__mod_name__ = "ᴄᴏᴜᴘʟᴇs"
 
