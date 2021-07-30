@@ -100,7 +100,7 @@ if ENV:
         raise Exception("Your blacklisted chats list does not contain valid integers.")
 
 else:
-    from Kaneki-ex.config import Development as Config
+    from Kaneki.config import Development as Config
 
     TOKEN = Config.TOKEN
 
@@ -200,7 +200,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from Kaneki-ex.modules.helper_funcs.handlers import (
+from Kaneki.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
