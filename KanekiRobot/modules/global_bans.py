@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import LaylaRobot.modules.sql.global_bans_sql as sql
-from LaylaRobot.modules.sql.users_sql import get_user_com_chats
-from LaylaRobot import (
+import Kaneki.modules.sql.global_bans_sql as sql
+from Kaneki.modules.sql.users_sql import get_user_com_chats
+from Kaneki import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -30,16 +30,16 @@ from LaylaRobot import (
     sw,
     dispatcher,
 )
-from LaylaRobot.modules.helper_funcs.chat_status import (
+from Kaneki.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from LaylaRobot.modules.helper_funcs.extraction import (
+from Kaneki.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from LaylaRobot.modules.helper_funcs.misc import send_to_list
+from Kaneki.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
@@ -550,7 +550,7 @@ dispatcher.add_handler(UNGBAN_HANDLER)
 dispatcher.add_handler(GBAN_LIST)
 dispatcher.add_handler(GBAN_STATUS)
 
-__mod_name__ = "Anti-Spam"
+__mod_name__ = "ᴀɴᴛɪ sᴘᴀᴍ"
 __handlers__ = [GBAN_HANDLER, UNGBAN_HANDLER, GBAN_LIST, GBAN_STATUS]
 
 if STRICT_GBAN:  # enforce GBANS if this is set
