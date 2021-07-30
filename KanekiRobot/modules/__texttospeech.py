@@ -1,4 +1,4 @@
-from LaylaRobot import telethn as tbot
+from Kaneki import telethn as tbot
 import os
 
 from gtts import gTTS
@@ -8,9 +8,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from LaylaRobot import *
+from Kaneki import *
 
-from LaylaRobot.events import register
+from Kaneki.events import register
 
 
 async def is_register_admin(chat, user):
@@ -31,7 +31,7 @@ async def _(event):
         return
     if event.is_group:
      if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-       await event.reply("🚨 Need Admin Pewer.. You can't use this command.. But you can use in my pm")
+       await event.reply("🚨 Need admin pewer.. You can't use this command.. But you can use in my pm")
        return
 
     input_str = event.pattern_match.group(1)
