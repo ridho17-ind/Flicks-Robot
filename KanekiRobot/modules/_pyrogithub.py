@@ -1,11 +1,11 @@
 # © @Mr_Dark_Prince
 import aiohttp
 from pyrogram import filters
-from LaylaRobot import pbot
-from LaylaRobot.pyrogramee.errors import capture_err
+from Kaneki import pbot
+from Kaneki.pyrogramee.errors import capture_err
 
 
-__mod_name__ = "Github"
+__mod_name__ = "ɢɪᴛʜᴜʙ"
 
 
 @pbot.on_message(filters.command('github'))
