@@ -5,10 +5,10 @@ import sys
 from contextlib import suppress
 from time import sleep
 
-import LaylaRobot
+import Kaneki
 
-from LaylaRobot import dispatcher
-from LaylaRobot.modules.helper_funcs.chat_status import dev_plus
+from Kaneki import dispatcher
+from Kaneki.modules.helper_funcs.chat_status import dev_plus
 from telegram import TelegramError, Update
 from telegram.error import Unauthorized
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -18,12 +18,12 @@ from telegram.ext import CallbackContext, CommandHandler, run_async
 def allow_groups(update: Update, context: CallbackContext):
     args = context.args
     if not args:
-        update.effective_message.reply_text(f"Current state: {LaylaRobot.ALLOW_CHATS}")
+        update.effective_message.reply_text(f"Current state: {Kaneki.ALLOW_CHATS}")
         return
     if args[0].lower() in ["off", "no"]:
-        LaylaRobot.ALLOW_CHATS = True
+        Kaneki.ALLOW_CHATS = True
     elif args[0].lower() in ["yes", "on"]:
-        LaylaRobot.ALLOW_CHATS = False
+        Kaneki.ALLOW_CHATS = False
     else:
         update.effective_message.reply_text("Format: /lockdown Yes/No or Off/On")
         return
@@ -90,5 +90,5 @@ dispatcher.add_handler(LEAVE_HANDLER)
 dispatcher.add_handler(GITPULL_HANDLER)
 dispatcher.add_handler(RESTART_HANDLER)
 
-__mod_name__ = "Devs"
+__mod_name__ = "ᴅᴇᴠs"
 __handlers__ = [LEAVE_HANDLER, GITPULL_HANDLER, RESTART_HANDLER, ALLOWGROUPS_HANDLER]
