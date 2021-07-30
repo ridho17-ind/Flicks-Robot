@@ -1,5 +1,5 @@
 from envparse import env
-from LaylaRobot import LOGGER
+from Kaneki import LOGGER
 
 DEFAULTS = {
     "LOAD_MODULES": True,
