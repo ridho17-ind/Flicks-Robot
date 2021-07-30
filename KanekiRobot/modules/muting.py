@@ -1,20 +1,20 @@
 import html
 from typing import Optional
 
-from LaylaRobot import LOGGER, TIGERS, dispatcher
-from LaylaRobot.modules.helper_funcs.chat_status import (
+from Kaneki import LOGGER, TIGERS, dispatcher
+from Kaneki.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
     is_user_admin,
     user_admin,
 )
-from LaylaRobot.modules.helper_funcs.extraction import (
+from Kaneki.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from LaylaRobot.modules.helper_funcs.string_handling import extract_time
-from LaylaRobot.modules.log_channel import loggable
+from Kaneki.modules.helper_funcs.string_handling import extract_time
+from Kaneki.modules.log_channel import loggable
 from telegram import Bot, Chat, ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
@@ -241,9 +241,9 @@ def temp_mute(update: Update, context: CallbackContext) -> str:
 
 # __help__ = """
 # *Admins only:*
-#  ❍ /mute <userhandle>*:* silences a user. Can also be used as a reply, muting the replied to user.
-#  ❍ /tmute <userhandle> x(m/h/d)*:* mutes a user for x time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
-#  ❍ /unmute <userhandle>*:* unmutes a user. Can also be used as a reply, muting the replied to user.
+#   /mute <userhandle>*:* silences a user. Can also be used as a reply, muting the replied to user.
+#   /tmute <userhandle> x(m/h/d)*:* mutes a user for x time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
+#   /unmute <userhandle>*:* unmutes a user. Can also be used as a reply, muting the replied to user.
 # """
 
 MUTE_HANDLER = CommandHandler("mute", mute)
@@ -254,5 +254,5 @@ dispatcher.add_handler(MUTE_HANDLER)
 dispatcher.add_handler(UNMUTE_HANDLER)
 dispatcher.add_handler(TEMPMUTE_HANDLER)
 
-__mod_name__ = "Muting"
+__mod_name__ = "ᴍᴜᴛɪɴɢ"
 __handlers__ = [MUTE_HANDLER, UNMUTE_HANDLER, TEMPMUTE_HANDLER]
