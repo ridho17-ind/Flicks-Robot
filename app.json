@@ -1,15 +1,15 @@
 {
-      "name": "Layla Robot",
-      "description": "Telegram group management bot.",
-      "logo": "https://telegra.ph/file/8f6b24120aab8490dca45.jpg",
+      "name": "Kaneki ex",
+      "description": "Telegram group management bot, Can help you to manage and maintain your group",
+      "logo": "https://telegra.ph/file/3534d0e0caadfe67ed22d.jpg",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "Layla"
+         "Kaneki-ex"
       ],   
-   "repository": "https://github.com/QueenArzoo/LaylaRobot.git",
+   "repository": "https://github.com/rizkyoye/Kaneki-ex.git",
    "addons": [
       {
          "options": {
