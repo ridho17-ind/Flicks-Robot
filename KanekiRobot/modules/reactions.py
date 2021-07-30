@@ -1,7 +1,7 @@
 import random
 
-from LaylaRobot import dispatcher
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
+from Kaneki import dispatcher
+from Kaneki.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
