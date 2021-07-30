@@ -1,6 +1,6 @@
 import threading
 
-from LaylaRobot.modules.sql import BASE, SESSION
+from Kaneki.modules.sql import BASE, SESSION
 from sqlalchemy import Column, String, distinct, func
 
 
