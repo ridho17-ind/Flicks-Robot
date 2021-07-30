@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from LaylaRobot import (
+from Kaneki import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from LaylaRobot import (
     dispatcher,
     sw,
 )
-from LaylaRobot.__main__ import STATS, TOKEN, USER_INFO
-import LaylaRobot.modules.sql.userinfo_sql as sql
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.sql.global_bans_sql import is_user_gbanned
-from LaylaRobot.modules.sql.afk_sql import is_afk, check_afk_status
-from LaylaRobot.modules.sql.users_sql import get_user_num_chats
-from LaylaRobot.modules.helper_funcs.chat_status import sudo_plus
-from LaylaRobot.modules.helper_funcs.extraction import extract_user
-from LaylaRobot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
+from Kaneki.__main__ import STATS, TOKEN, USER_INFO
+import Kaneki.modules.sql.userinfo_sql as sql
+from Kaneki.modules.disable import DisableAbleCommandHandler
+from Kaneki.modules.sql.global_bans_sql import is_user_gbanned
+from Kaneki.modules.sql.afk_sql import is_afk, check_afk_status
+from Kaneki.modules.sql.users_sql import get_user_num_chats
+from Kaneki.modules.helper_funcs.chat_status import sudo_plus
+from Kaneki.modules.helper_funcs.extraction import extract_user
+from Kaneki import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
@@ -518,30 +518,30 @@ def __user_info__(user_id):
 
 __help__ = """
 *Away from group*
- ❍ /afk <reason>*:* mark yourself as AFK(away from keyboard).
- ❍ brb <reason>*:* same as the afk command - but not a command.
+  /afk <reason>*:* mark yourself as AFK(away from keyboard).
+  /brb <reason>*:* same as the afk command - but not a command.
 When marked as AFK, any mentions will be replied to with a message to say you're not available!
 
 *ID:*
- ❍ /id*:* get the current group id. If used by replying to a message, gets that user's id.
- ❍ /gifid*:* reply to a gif to me to tell you its file ID.
+  /id*:* get the current group id. If used by replying to a message, gets that user's id.
+  /gifid*:* reply to a gif to me to tell you its file ID.
 
 *Self addded information:* 
- ❍ /setme <text>*:* will set your info
- ❍ /me*:* will get your or another user's info.
+  /setme <text>*:* will set your info
+  /me*:* will get your or another user's info.
 *Examples:* 💡
  ➩ /setme I am a wolf.
  ➩ /me @username(defaults to yours if no user specified)
 
 *Information others add on you:* 
- ❍ /bio*:* will get your or another user's bio. This cannot be set by yourself.
- ❍ /setbio <text>*:* while replying, will save another user's bio 
+  /bio*:* will get your or another user's bio. This cannot be set by yourself.
+  /setbio <text>*:* while replying, will save another user's bio 
 *Examples:* 💡
  ➩ /bio @username(defaults to yours if not specified).`
  ➩ /setbio This user is a wolf` (reply to the user)
 
 *Overall Information about you:*
- ❍ /info*:* get information about a user. 
+  /info*:* get information about a user. 
  
 *What is that health thingy?*
  Come and see [HP System explained](https://t.me/OnePunchUpdates/192)
@@ -567,7 +567,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "Infos"
+__mod_name__ = "ɪɴғᴏ"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
