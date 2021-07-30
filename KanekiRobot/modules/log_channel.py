@@ -3,7 +3,7 @@ from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from LaylaRobot.modules.helper_funcs.misc import is_module_loaded
+from Kaneki.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from LaylaRobot import EVENT_LOGS, LOGGER, dispatcher
-    from LaylaRobot.modules.helper_funcs.chat_status import user_admin
-    from LaylaRobot.modules.sql import log_channel_sql as sql
+    from Kaneki import EVENT_LOGS, LOGGER, dispatcher
+    from Kaneki.modules.helper_funcs.chat_status import user_admin
+    from Kaneki.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
@@ -194,16 +194,16 @@ if is_module_loaded(FILENAME):
 
     __help__ = """
 *Admins only:*
- ❍ /logchannel*:* get log channel info
- ❍ /setlog*:* set the log channel.
- ❍ /unsetlog*:* unset the log channel.
+  /logchannel*:* get log channel info
+  /setlog*:* set the log channel.
+  /unsetlog*:* unset the log channel.
 Setting the log channel is done by:
-❍ adding the bot to the desired channel (as an admin!)
-❍ sending /setlog in the channel
-❍ forwarding the /setlog to the group
+ adding the bot to the desired channel (as an admin!)
+ sending /setlog in the channel
+ forwarding the /setlog to the group
 """
 
-    __mod_name__ = "Channel"
+    __mod_name__ = "ᴄʜᴀɴɴᴇʟ"
 
     LOG_HANDLER = CommandHandler("logchannel", logging)
     SET_LOG_HANDLER = CommandHandler("setlog", setlog)
