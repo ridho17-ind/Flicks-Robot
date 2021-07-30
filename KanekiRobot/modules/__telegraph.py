@@ -1,12 +1,12 @@
-from LaylaRobot.events import register
-from LaylaRobot import telethn as tbot
+from Kaneki.events import register
+from Kaneki import telethn as tbot
 TMP_DOWNLOAD_DIRECTORY = "./"
 from telethon import events
 import os
 from PIL import Image
 from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
-Hero = "Layla"
+Hero = "Kaneki"
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=Hero)
 auth_url = r["auth_url"]
@@ -85,4 +85,4 @@ I can upload files to Telegraph
  ❍ /txt :Get Telegraph Link of Replied Text
 """
 
-__mod_name__ = "Telegraph"
+__mod_name__ = "ᴛᴇʟᴇɢʀᴀᴘʜ"
