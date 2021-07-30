@@ -5,7 +5,7 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from LaylaRobot import (
+from Kaneki import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -15,8 +15,8 @@ from LaylaRobot import (
     WOLVES,
     dispatcher,
 )
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.chat_status import (
+from Kaneki.modules.disable import DisableAbleCommandHandler
+from Kaneki.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -27,9 +27,9 @@ from LaylaRobot.modules.helper_funcs.chat_status import (
     user_can_ban,
     can_delete,
 )
-from LaylaRobot.modules.helper_funcs.extraction import extract_user_and_text
-from LaylaRobot.modules.helper_funcs.string_handling import extract_time
-from LaylaRobot.modules.log_channel import gloggable, loggable
+from Kaneki.modules.helper_funcs.extraction import extract_user_and_text
+from Kaneki.modules.helper_funcs.string_handling import extract_time
+from Kaneki.modules.log_channel import gloggable, loggable
 
 
 @run_async
@@ -399,19 +399,19 @@ def selfunban(context: CallbackContext, update: Update) -> str:
 
 
 __help__ = """
- ❍ /punchme*:* punchs the user who issued the command
+  /bashhme*:* punchs the user who issued the command
 
 *Admins only:*
- ❍ /ban <userhandle>*:* bans a user. (via handle, or reply)
- ❍ /sban <userhandle>*:* Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
- ❍ /tban <userhandle> x(m/h/d)*:* bans a user for `x` time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
- ❍ /unban <userhandle>*:* unbans a user. (via handle, or reply)
- ❍ /punch <userhandle>*:* Punches a user out of the group, (via handle, or reply)
+  /ban <userhandle>*:* bans a user. (via handle, or reply)
+  /sban <userhandle>*:* Silently ban a user. Deletes command, Replied message and doesn't reply. (via handle, or reply)
+  /tban <userhandle> x(m/h/d)*:* bans a user for `x` time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
+  /unban <userhandle>*:* unbans a user. (via handle, or reply)
+  /punch <userhandle>*:* Punches a user out of the group, (via handle, or reply)
 
  *Admins only:*
- ❍ /mute <userhandle>*:* silences a user. Can also be used as a reply, muting the replied to user.
- ❍ /tmute <userhandle> x(m/h/d)*:* mutes a user for x time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
- ❍ /unmute <userhandle>*:* unmutes a user. Can also be used as a reply, muting the replied to user.
+  /mute <userhandle>*:* silences a user. Can also be used as a reply, muting the replied to user.
+  /tmute <userhandle> x(m/h/d)*:* mutes a user for x time. (via handle, or reply). `m` = `minutes`, `h` = `hours`, `d` = `days`.
+  /unmute <userhandle>*:* unmutes a user. Can also be used as a reply, muting the replied to user.
 """
 
 BAN_HANDLER = CommandHandler(["ban", "sban"], ban)
@@ -428,7 +428,7 @@ dispatcher.add_handler(UNBAN_HANDLER)
 dispatcher.add_handler(ROAR_HANDLER)
 dispatcher.add_handler(PUNCHME_HANDLER)
 
-__mod_name__ = "Ban/Mute"
+__mod_name__ = "ʙᴀɴ/ᴍᴜᴛᴇ"
 __handlers__ = [
     BAN_HANDLER,
     TEMPBAN_HANDLER,
