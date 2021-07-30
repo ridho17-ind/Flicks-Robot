@@ -1,4 +1,4 @@
-from LaylaRobot.mongo import db
+from Kaneki.mongo import db
 from typing import Dict, List, Union
 
 
