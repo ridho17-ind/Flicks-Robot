@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from LaylaRobot import (
+from Kaneki import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -25,9 +25,9 @@ from LaylaRobot import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from LaylaRobot.modules import ALL_MODULES
-from LaylaRobot.modules.helper_funcs.chat_status import is_user_admin
-from LaylaRobot.modules.helper_funcs.misc import paginate_modules
+from Kaneki.modules import ALL_MODULES
+from Kaneki.modules.helper_funcs.chat_status import is_user_admin
+from Kaneki.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -74,9 +74,9 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, I'M Layla
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
-Maintained by @HEROGAMERS1 ❤
+ʜɪɪ, ɪ'ᴍ ᴋᴀɴᴇᴋɪ
+`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help `ᴛᴏ sᴇᴇ ᴀʟʟ [ғᴇᴀᴛᴜʀᴇs.](https://telegra.ph/file/a997a0f3c5f04313f476c.jpg)
+Maintained by @rizexx
 """
 
 buttons = [
@@ -103,15 +103,14 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'M` Layla
-`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
-Powered by :- [Awesome Bots](t.me/Laylalist)"""
+`ʜᴀɪ, ɪ'ᴍ ᴋᴀɴᴇᴋɪ`
+`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ`[.](https://telegra.ph/file/3486eca568218cdb74f24.jpg)
 
-layla_IMG = "https://telegra.ph/file/524b78577a42b02b2f074.jpg"
+Kaneki_IMG = "https://telegra.ph/file/3486eca568218cdb74f24.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Hero](t.me/HEROGAMERS1) \
- Supporting isnt always financial! [AwesomeSupport](t.me/LaylaList) \
+ You can support the project [riz-ex](t.me/rizexx) \
+ Supporting isnt always financial! [All about music](t.me/nyanyiisinii) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
@@ -125,7 +124,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("LaylaRobot.modules." + module_name)
+    imported_module = importlib.import_module("Kaneki-ex.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
