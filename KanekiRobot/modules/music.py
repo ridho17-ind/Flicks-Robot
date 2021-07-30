@@ -12,9 +12,9 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from LaylaRobot.conf import get_str_key
-from LaylaRobot.pyrogramee.pluginshelper import get_text, progress
-from LaylaRobot import pbot
+from Kaneki.conf import get_str_key
+from Kaneki.pyrogramee.pluginshelper import get_text, progress
+from Kaneki import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
@@ -61,7 +61,7 @@ async def ytmusic(client, message: Message):
         return
     c_time = time.time()
     file_stark = f"{ytdl_data['id']}.mp4"
-    capy = f"**Video Name ➠** `{thum}` \n**Requested For :** `{urlissed}` \n**Channel :** `{thums}` \n**Link :** `{mo}`"
+    capy = f"**Video Name ➠** `{thum}` \n**Requested For :** `{urlissed}` \n**Channel :** `{thums}` \n**Link :** `{mo}` \n**Uploaded by** @rizexx"
     await client.send_video(
         message.chat.id,
         video=open(file_stark, "rb"),
@@ -133,7 +133,7 @@ async def ytmusic(client, message: Message):
         await pablo.edit(f"**Failed To Download** \n**Error :** `{str(e)}`")
         return
     c_time = time.time()
-    capy = f"**Song Name :** `{thum}` \n**Requested For :** `{urlissed}` \n**Channel :** `{thums}` \n**Link :** `{mo}`"
+    capy = f"**Song Name :** `{thum}` \n**Requested For :** `{urlissed}` \n**Channel :** `{thums}` \n**Link :** `{mo}` \n**Uploaded by** @rizexx"
     file_stark = f"{ytdl_data['id']}.mp3"
     await client.send_audio(
         message.chat.id,
