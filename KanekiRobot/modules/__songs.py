@@ -6,8 +6,8 @@ import requests
 import wget
 from pyrogram import filters
 
-from LaylaRobot import pbot as Jebot
-from LaylaRobot.pyrogramee.dark import get_arg
+from Kaneki import pbot as Jebot
+from Kaneki.pyrogramee.dark import get_arg
 
 
 @Jebot.on_message(filters.command("saavn"))
@@ -16,10 +16,10 @@ async def song(client, message):
     message.from_user["id"]
     args = get_arg(message) + " " + "song"
     if args.startswith(" "):
-        await message.reply("<b>Enter song name❗</b>")
+        await message.reply("<b>Enter song name</b>")
         return ""
     m = await message.reply_text(
-        "Downloading your song,\nPlz wait ⏳️"
+        "Downloading your song,\n wait ⏳️"
     )
     try:
         r = requests.get(f"https://jostapi.herokuapp.com/saavn?query={args}")
@@ -44,7 +44,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from LaylaRobot import pbot as Layla
+from Kaneki import pbot as Kaneki
 
 ARQ = "https://thearq.tech/"
 
@@ -68,7 +68,7 @@ async def download_song(url):
     return song_name
 
 
-@Layla.on_message(filters.command("deezer"))
+@Kaneki.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
         await message.reply_text("Download Now Deezer")
@@ -98,7 +98,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from LaylaRobot import pbot as ASUNA
+from Kaneki import pbot as ASUNA
 
 ARQ = "https://thearq.tech/"
 
@@ -122,7 +122,7 @@ async def download_song(url):
     return song_name
 
 
-@Layla.on_message(filters.command("deezer"))
+@Kaneki.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
         await message.reply_text("Download Now Deezer")
@@ -146,7 +146,7 @@ async def deezer(_, message):
     await m.delete()
     
     
-__mod_name__ = "◎Music"
+__mod_name__ = "sᴏɴɢs"
 
 __help__ = """
 • `/song`** <songname artist(optional)>: download the song in it's best quality available.(API BASED)
