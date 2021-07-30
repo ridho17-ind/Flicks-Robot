@@ -8,21 +8,6 @@
 
 A modular Telegram Python bot running on python3 with a sqlalchemy database.
 
-## How to setup/deploy.
-
-
-
-<details>
-  <summary>Steps to deploy on Heroku !! </summary>
-
-```
-Fill in all the details, Deploy!
-Now go to https://dashboard.heroku.com/apps/(app-name)/resources ( Replace (app-name) with your app name )
-Turn on worker dyno (Don't worry It's free :D) & Webhook
-Now send the bot /start, If it doesn't respond go to https://dashboard.heroku.com/apps/(app-name)/settings and remove webhook and port.
-```
-
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FQueenArzoo%2FLaylaRobot&template=https%3A%2F%2Fgithub.com%2FQueenArzoo%2FKaneki-ex)
 
 
 
