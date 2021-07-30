@@ -1,8 +1,8 @@
 import math
 
 import pynewtonmath as newton
-from LaylaRobot import dispatcher
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
+from Kaneki import dispatcher
+from Kaneki.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
@@ -113,7 +113,7 @@ def log(update: Update, context: CallbackContext):
 
 
 
-__mod_name__ = "Math"
+__mod_name__ = "ᴍᴀᴛʜ"
 
 SIMPLIFY_HANDLER = DisableAbleCommandHandler("math", simplify)
 FACTOR_HANDLER = DisableAbleCommandHandler("factor", factor)
