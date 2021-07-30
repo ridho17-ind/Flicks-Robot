@@ -5,10 +5,10 @@ from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Upda
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import CommandHandler, CallbackQueryHandler, run_async
 
-import LaylaRobot.modules.sql.connection_sql as sql
-from LaylaRobot import dispatcher, DRAGONS, DEV_USERS
-from LaylaRobot.modules.helper_funcs import chat_status
-from LaylaRobot.modules.helper_funcs.alternate import send_message, typing_action
+import Kaneki.modules.sql.connection_sql as sql
+from Kaneki import dispatcher, DRAGONS, DEV_USERS
+from Kaneki.modules.helper_funcs import chat_status
+from Kaneki.modules.helper_funcs.alternate import send_message, typing_action
 
 user_admin = chat_status.user_admin
 
@@ -149,10 +149,10 @@ def connect_chat(update, context):
             if gethistory:
                 buttons = [
                     InlineKeyboardButton(
-                        text="❎ Close button", callback_data="connect_close"
+                        text="ᴄʟᴏsᴇ ʙᴜᴛᴛᴏɴ", callback_data="connect_close"
                     ),
                     InlineKeyboardButton(
-                        text="🧹 Clear history", callback_data="connect_clear"
+                        text="ᴄʟᴇᴀʀ ʜɪsᴛᴏʀʏ", callback_data="connect_clear"
                     ),
                 ]
             else:
@@ -165,7 +165,7 @@ def connect_chat(update, context):
                 )
                 buttons.append(
                     InlineKeyboardButton(
-                        text="🔌 Disconnect", callback_data="connect_disconnect"
+                        text="ᴅɪsᴄᴏɴɴᴇᴄᴛ", callback_data="connect_disconnect"
                     )
                 )
             else:
@@ -387,19 +387,19 @@ def connect_button(update, context):
         connect_chat(update, context)
 
 
-__mod_name__ = "Connect"
+__mod_name__ = "ᴄᴏɴɴᴇᴄᴛ"
 
 __help__ = """
 Sometimes, you just want to add some notes and filters to a group chat, but you don't want everyone to see; This is where connections come in...
 This allows you to connect to a chat's database, and add things to it without the commands appearing in chat! For obvious reasons, you need to be an admin to add things; but any member in the group can view your data.
 
- ❍ /connect: Connects to chat (Can be done in a group by /connect or /connect <chat id> in PM)
- ❍ /connection: List connected chats
- ❍ /disconnect: Disconnect from a chat
- ❍ /helpconnect: List available commands that can be used remotely
+  /connect: Connects to chat (Can be done in a group by /connect or /connect <chat id> in PM)
+  /connection: List connected chats
+  /disconnect: Disconnect from a chat
+  /helpconnect: List available commands that can be used remotely
 
 *Admin only:*
- ❍ /allowconnect <yes/no>: allow a user to connect to a chat
+  /allowconnect <yes/no>: allow a user to connect to a chat
 """
 
 CONNECT_CHAT_HANDLER = CommandHandler("connect", connect_chat, pass_args=True)
