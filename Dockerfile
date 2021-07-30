@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/LaylaRobot
-RUN git clone -b shiken https://github.com/rizkyoye/Kaneki-ex /root/Kaneki-ex
+RUN git clone -b shiken https://github.com/rizkyoye/Kaneki-robot /root/Kaneki-robot
 WORKDIR /root/Kaneki-ex
 
 #Copy config file to /root/LaylaRobot/LaylaRobot
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","Kaneki-ex"]
+CMD ["python3","-m","LaylaRobot"]
