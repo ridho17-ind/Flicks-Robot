@@ -1,4 +1,4 @@
-from LaylaRobot import telethn as tbot
+from Kaneki import telethn as tbot
 import os
 import urllib.request
 from datetime import datetime
@@ -11,8 +11,8 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from LaylaRobot import *
-from LaylaRobot.events import register
+from Kaneki import *
+from Kaneki.events import register
 
 
 async def is_register_admin(chat, user):
@@ -33,7 +33,7 @@ async def _(event):
         return
     if event.is_group:
      if not (await is_register_admin(event.input_chat, event.message.sender_id)):
-       await event.reply("🚨 Need Admin Pewer.. You can't use this command.. But you can use in my pm")
+       await event.reply("🚨 Need admin pewer.. You can't use this command.. But you can use in my pm")
        return
 
     start = datetime.now()
@@ -105,4 +105,4 @@ sm,sn,so,sq,sr,st,su,sv,sw,ta,te,tg,th,tl,tr,uk,ur,uz,
 vi,xh,yi,yo,zh,zh_CN,zh_TW,zu`
 """
 
-__mod_name__ = "TTS/STT"
+__mod_name__ = "ᴛᴛs/sᴛᴛ"
