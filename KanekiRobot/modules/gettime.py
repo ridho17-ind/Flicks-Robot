@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from LaylaRobot import TIME_API_KEY, dispatcher
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
+from Kaneki import TIME_API_KEY, dispatcher
+from Kaneki.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
@@ -95,6 +95,6 @@ TIME_HANDLER = DisableAbleCommandHandler("time", gettime)
 
 dispatcher.add_handler(TIME_HANDLER)
 
-__mod_name__ = "TIME"
+__mod_name__ = "ᴛɪᴍᴇ"
 __command_list__ = ["time"]
 __handlers__ = [TIME_HANDLER]
