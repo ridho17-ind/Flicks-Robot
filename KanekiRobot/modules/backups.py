@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import LaylaRobot.modules.sql.notes_sql as sql
-from LaylaRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from LaylaRobot.__main__ import DATA_IMPORT
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin
-from LaylaRobot.modules.helper_funcs.alternate import typing_action
+import Kaneki.modules.sql.notes_sql as sql
+from Kaneki import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from Kaneki.__main__ import DATA_IMPORT
+from Kaneki.modules.helper_funcs.chat_status import user_admin
+from Kaneki.modules.helper_funcs.alternate import typing_action
 
-# from LaylaRobot.modules.rules import get_rules
-import LaylaRobot.modules.sql.rules_sql as rulessql
+# from Kaneki.modules.rules import get_rules
+import Kaneki.modules.sql.rules_sql as rulessql
 
-# from LaylaRobot.modules.sql import warns_sql as warnssql
-import LaylaRobot.modules.sql.blacklist_sql as blacklistsql
-from LaylaRobot.modules.sql import disable_sql as disabledsql
+# from Kaneki.modules.sql import warns_sql as warnssql
+import Kaneki.modules.sql.blacklist_sql as blacklistsql
+from Kaneki.modules.sql import disable_sql as disabledsql
 
-# from LaylaRobot.modules.sql import cust_filters_sql as filtersql
-# import LaylaRobot.modules.sql.welcome_sql as welcsql
-import LaylaRobot.modules.sql.locks_sql as locksql
-from LaylaRobot.modules.connection import connected
+# from Kaneki.modules.sql import cust_filters_sql as filtersql
+# import Kaneki.modules.sql.welcome_sql as welcsql
+import Kaneki.modules.sql.locks_sql as locksql
+from Kaneki.modules.connection import connected
 
 
 @run_async
@@ -367,15 +367,15 @@ def get_chat(chat_id, chat_data):
         return {"status": False, "value": False}
 
 
-__mod_name__ = "Backup"
+__mod_name__ = "ʙᴀᴄᴋᴜᴘ"
 
 __help__ = """
 *Only for group owner:*
 
- ❍ /import: Reply to the backup file for the butler / emilia group to import as much as possible, making transfers very easy! \
+  /import: Reply to the backup file for the butler / emilia group to import as much as possible, making transfers very easy! \
  Note that files / photos cannot be imported due to telegram restrictions.
 
- ❍ /export: Export group data, which will be exported are: rules, notes (documents, images, music, video, audio, voice, text, text buttons) \
+  /export: Export group data, which will be exported are: rules, notes (documents, images, music, video, audio, voice, text, text buttons) \
 
 """
 
