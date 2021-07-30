@@ -2,8 +2,8 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
-from LaylaRobot.modules.helper_funcs.msg_types import Types
-from LaylaRobot.modules.sql import BASE, SESSION
+from Kaneki.modules.helper_funcs.msg_types import Types
+from Kaneki.modules.sql import BASE, SESSION
 
 
 class CustomFilters(BASE):
