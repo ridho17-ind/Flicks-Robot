@@ -1,12 +1,12 @@
 import random, html
 
-from LaylaRobot import dispatcher
-from LaylaRobot.modules.disable import (
+from Kaneki import dispatcher
+from Kaneki.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from LaylaRobot.modules.sql import afk_sql as sql
-from LaylaRobot.modules.users import get_user_id
+from Kaneki.modules.sql import afk_sql as sql
+from Kaneki.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
@@ -151,7 +151,7 @@ dispatcher.add_handler(AFK_REGEX_HANDLER, AFK_GROUP)
 dispatcher.add_handler(NO_AFK_HANDLER, AFK_GROUP)
 dispatcher.add_handler(AFK_REPLY_HANDLER, AFK_REPLY_GROUP)
 
-__mod_name__ = "AFK"
+__mod_name__ = "ᴀғᴋ"
 __command_list__ = ["afk"]
 __handlers__ = [
     (AFK_HANDLER, AFK_GROUP),
