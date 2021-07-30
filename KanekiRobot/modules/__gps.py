@@ -1,8 +1,8 @@
 import os
-from LaylaRobot import telethn as tbot
+from Kaneki import telethn as tbot
 from geopy.geocoders import Nominatim
-from LaylaRobot.events import register
-from LaylaRobot import *
+from Kaneki.events import register
+from Kaneki import *
 from telethon import *
 from telethon.tl import *
 
