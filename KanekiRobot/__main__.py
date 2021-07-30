@@ -91,7 +91,6 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʟᴏɢꜱ", url=f"https://t.me/laylalogs"),
         InlineKeyboardButton(
             text="ᴏᴡɴᴇʀ ʙᴏᴛ", url=f"https://t.me/rizexx"
         ),
@@ -356,16 +355,14 @@ def kaneki_about_callback(update, context):
     query = update.callback_query
     if query.data == "kaneki":
         query.message.edit_text(
-            text="""  ɪ'ᴍ ᴋᴀɴᴇᴋɪ, a powerful group management bot built to help you manage your group easily.
-                 \n❍ I can restrict users.
-                 \n❍ I can greet users with customizable welcome messages and even set a group's rules.
-                 \n❍ I have an advanced anti-flood system.
-                 \n❍ I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
-                 \n❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
-                 \n❍ I check for admins' permissions before executing any command and more stuffs
-                 \n\n_Layla's licensed under the GNU General Public License v3.0_
-                 \nHere is the [💾Repository](https://github.com/rizkyoye/Kaneki-ex).
-                 \n\nIf you have any question about Layla, let us know at .""",
+            text="""  ɪ'ᴍ ᴋᴀɴᴇᴋɪ, ᴀ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ.
+                 \n I can restrict users.
+                 \n I can greet users with customizable welcome messages and even set a group's rules.
+                 \n I have an advanced anti-flood system.
+                 \n I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc.
+                 \n I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
+                 \n I check for admins' permissions before executing any command and more stuffs
+                 \n\n_Kaneki's licensed under the GNU General Public License v3.0_""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
