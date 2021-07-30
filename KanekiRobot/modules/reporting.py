@@ -1,9 +1,9 @@
 import html
 
-from LaylaRobot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from LaylaRobot.modules.log_channel import loggable
-from LaylaRobot.modules.sql import reporting_sql as sql
+from Kaneki import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
+from Kaneki.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from Kaneki.modules.log_channel import loggable
+from Kaneki.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
@@ -264,12 +264,12 @@ def buttons(update: Update, context: CallbackContext):
 
 
 __help__ = """
- ❍ /report <reason>*:* reply to a message to report it to admins.
- ❍ @admin*:* reply to a message to report it to admins.
+  /report <reason>*:* reply to a message to report it to admins.
+  @admin*:* reply to a message to report it to admins.
 *NOTE:* Neither of these will get triggered if used by admins.
 
 *Admins only:*
- ❍ /reports <on/off>*:* change report setting, or view current status.
+  /reports <on/off>*:* change report setting, or view current status.
    • If done in pm, toggles your status.
    • If in group, toggles that groups's status.
 """
@@ -285,7 +285,7 @@ dispatcher.add_handler(SETTING_HANDLER)
 dispatcher.add_handler(REPORT_HANDLER, REPORT_GROUP)
 dispatcher.add_handler(ADMIN_REPORT_HANDLER, REPORT_GROUP)
 
-__mod_name__ = "Reports"
+__mod_name__ = "ʀᴇᴘᴏʀᴛ"
 __handlers__ = [
     (REPORT_HANDLER, REPORT_GROUP),
     (ADMIN_REPORT_HANDLER, REPORT_GROUP),
