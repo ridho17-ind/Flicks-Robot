@@ -14,7 +14,7 @@ from pyrogram import filters
 from Kaneki import BOT_ID
 from Kaneki.helper_extra.aichat import add_chat, get_session, remove_chat
 from Kaneki.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from Kaneki import pbot as layla
+from Kaneki import pbot as kaneki
 
 translator = google_translator()
 import requests
@@ -39,7 +39,7 @@ async def fetch(url):
         return
 
 
-layla_chats = []
+kaneki_chats = []
 en_chats = []
 
 @kaneki.on_message(
