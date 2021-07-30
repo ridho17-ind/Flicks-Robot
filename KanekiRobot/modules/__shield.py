@@ -25,21 +25,21 @@ from google_trans_new import google_translator
 from telethon import events
 from telethon.tl.types import ChatBannedRights
 
-from LaylaRobot import BOT_ID
-from LaylaRobot.conf import get_int_key, get_str_key
+from Kaneki import BOT_ID
+from Kaneki.conf import get_int_key, get_str_key
 
-# from LaylaRobot.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
-from LaylaRobot.pyrogramee.telethonbasics import is_admin
-from LaylaRobot.events import register
-from LaylaRobot import MONGO_DB_URI 
+# from Kaneki.db.mongo_helpers.nsfw_guard import add_chat, get_all_nsfw_chats, is_chat_in_db, rm_chat
+from Kaneki.pyrogramee.telethonbasics import is_admin
+from Kaneki.events import register
+from Kaneki import MONGO_DB_URI 
 from pymongo import MongoClient
-from LaylaRobot.modules.sql_extended.nsfw_watch_sql import (
+from Kaneki.modules.sql_extended.nsfw_watch_sql import (
     add_nsfwatch,
     get_all_nsfw_enabled_chat,
     is_nsfwatch_indb,
     rmnsfwatch,
 )
-from LaylaRobot import telethn as tbot
+from Kaneki import telethn as tbot
 
 translator = google_translator()
 MUTE_RIGHTS = ChatBannedRights(until_date=None, send_messages=False)
@@ -48,7 +48,7 @@ MONGO_DB_URI = get_str_key("MONGO_DB_URI")
 
 client = MongoClient()
 client = MongoClient(MONGO_DB_URI)
-db = client["LaylaRobot"]
+db = client["Kaneki-ex"]
 
 async def is_nsfw(event):
     lmao = event
@@ -430,7 +430,7 @@ async def del_profanity(event):
 
 __help__ = """
 <b> Group Guardian: </b>
-✪ Layla can protect your group from NSFW senders, Slag word users and also can force members to use English
+✪ Kaneki can protect your group from NSFW senders, Slag word users and also can force members to use English
 
 <b>Commmands</b>
  - /gshield <i>on/off</i> - Enable|Disable Porn cleaning
@@ -440,4 +440,4 @@ __help__ = """
 Note: Special credits goes to Julia project and Friday Userbot
  
 """
-__mod_name__ = "Shield"
+__mod_name__ = "sʜɪᴇʟᴅ"
