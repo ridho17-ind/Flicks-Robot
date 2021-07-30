@@ -5,9 +5,9 @@ import zipfile
 from telethon import types
 from telethon.tl import functions
 
-from LaylaRobot import TEMP_DOWNLOAD_DIRECTORY
-from LaylaRobot import telethn as client
-from LaylaRobot.events import register
+from Kaneki import TEMP_DOWNLOAD_DIRECTORY
+from Kaneki import telethn as client
+from Kaneki.events import register
 
 
 async def is_register_admin(chat, user):
@@ -149,7 +149,7 @@ async def _(event):
         with zipfile.ZipFile(downloaded_file_name, "r") as zip_ref:
             zip_ref.extractall(extracted)
         filename = sorted(get_lst_of_files(extracted, []))
-        await event.reply("Unzipping now 😌")
+        await event.reply("Unzipping now")
         for single_file in filename:
             if os.path.exists(single_file):
                 caption_rts = os.path.basename(single_file)
