@@ -11,10 +11,10 @@ import aiohttp
 from google_trans_new import google_translator
 from pyrogram import filters
 
-from LaylaRobot import BOT_ID
-from LaylaRobot.helper_extra.aichat import add_chat, get_session, remove_chat
-from LaylaRobot.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from LaylaRobot import pbot as layla
+from Kaneki import BOT_ID
+from Kaneki.helper_extra.aichat import add_chat, get_session, remove_chat
+from Kaneki.pyrogramee.pluginshelper import admins_only, edit_or_reply
+from Kaneki import pbot as layla
 
 translator = google_translator()
 import requests
@@ -42,7 +42,7 @@ async def fetch(url):
 layla_chats = []
 en_chats = []
 
-@layla.on_message(
+@kaneki.on_message(
     filters.command("chatbot") & ~filters.edited & ~filters.bot & ~filters.private
 )
 @admins_only
@@ -69,10 +69,10 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         Escobar = remove_chat(int(message.chat.id))
         if not Escobar:
-            await lel.edit("Layla AI Was Not Activated In This Chat")
+            await lel.edit("Kaneki AI Was Not Activated In This Chat")
             return
         await lel.edit(
-            f"layla AI Successfully Deactivated For Users In The Chat {message.chat.id}"
+            f"Kaneki AI Successfully Deactivated For Users In The Chat {message.chat.id}"
         )
 
     elif status == "EN" or status == "en" or status == "english":
@@ -88,7 +88,7 @@ async def hmm(_, message):
         )
 
 
-@layla.on_message(
+@kaneki.on_message(
     filters.text
     & filters.reply
     & ~filters.bot
@@ -114,9 +114,9 @@ async def hmm(client, message):
         message.continue_propagation()
     if chat_id in en_chats:
         test = msg
-        test = test.replace("layla", "Aco")
-        test = test.replace("layla", "Aco")
-        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@LaylaRobot&ownername=@HEROGAMERS1"
+        test = test.replace("kaneki", "Aco")
+        test = test.replace("kaneki", "Aco")
+        URL = "https://api.affiliateplus.xyz/api/chatbot?message=hi&botname=@kanekiexbot&ownername=@rizexx"
 
         try:
             r = requests.request("GET", url=URL)
@@ -177,9 +177,9 @@ async def hmm(client, message):
         # test = emoji.demojize(test.strip())
 
         # Kang with the credits bitches @InukaASiTH
-        test = test.replace("layla", "Aco")
-        test = test.replace("layla", "Aco")
-        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@LaylaRobot&ownername=@HEROGAMERS1"
+        test = test.replace("kaneki", "Aco")
+        test = test.replace("kaneki", "Aco")
+        URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@kanekiexbot&ownername=@rizexx"
         try:
             r = requests.request("GET", url=URL)
         except:
@@ -251,9 +251,9 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("layla", "Aco")
-    test = test.replace("layla", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@LaylaRobot&ownername=@HEROGAMERS1"
+    test = test.replace("kaneki", "Aco")
+    test = test.replace("kaneki", "Aco")
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@kanekiexbot&ownername=@rizexx"
     try:
         r = requests.request("GET", url=URL)
     except:
@@ -329,9 +329,9 @@ async def inuka(client, message):
     # test = emoji.demojize(test.strip())
 
     # Kang with the credits bitches @InukaASiTH
-    test = test.replace("layla", "Aco")
-    test = test.replace("layla", "Aco")
-    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@LaylaRobot&ownername=@A_viyu"
+    test = test.replace("kaneki", "Aco")
+    test = test.replace("kaneki", "Aco")
+    URL = f"https://api.affiliateplus.xyz/api/chatbot?message={test}&botname=@kanekiexbot&ownername=@rizexx"
     try:
         r = requests.request("GET", url=URL)
     except:
@@ -362,4 +362,4 @@ layla AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
  
 """
 
-__mod_name__ = "Chatbot"
+__mod_name__ = "ᴄʜᴀᴛʙᴏᴛ"
