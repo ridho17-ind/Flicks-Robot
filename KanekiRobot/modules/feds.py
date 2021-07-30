@@ -6,8 +6,8 @@ import time
 import uuid
 from io import BytesIO
 
-import LaylaRobot.modules.sql.feds_sql as sql
-from LaylaRobot import (
+import Kaneki.modules.sql.feds_sql as sql
+from Kaneki import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
@@ -17,15 +17,15 @@ from LaylaRobot import (
     WOLVES,
     dispatcher,
 )
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot.modules.helper_funcs.alternate import send_message
-from LaylaRobot.modules.helper_funcs.chat_status import is_user_admin
-from LaylaRobot.modules.helper_funcs.extraction import (
+from Kaneki.modules.disable import DisableAbleCommandHandler
+from Kaneki.modules.helper_funcs.alternate import send_message
+from Kaneki.modules.helper_funcs.chat_status import is_user_admin
+from Kaneki.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from LaylaRobot.modules.helper_funcs.string_handling import markdown_parser
+from Kaneki.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -2394,7 +2394,7 @@ def fed_user_help(update: Update, context: CallbackContext):
     )
 
 
-__mod_name__ = "Feds"
+__mod_name__ = "ғᴇᴅs"
 
 __help__ = """
 Everything is fun, until a spammer starts entering your group, and you have to block it. Then you need to start banning more, and more, and it hurts.
