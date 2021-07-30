@@ -180,9 +180,4 @@ For queries or any issues regarding the bot please open an issue ticket or visit
 For starters click on this button 
 </details>  
 
-## Credits
-The bot is based on the original work done by [PaulSonOfLars](https://github.com/PaulSonOfLars)
-
-
-
 ## [riz-ex](http://t.me/rizexx)
