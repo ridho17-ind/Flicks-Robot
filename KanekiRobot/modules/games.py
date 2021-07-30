@@ -1,6 +1,6 @@
 from telethon.tl.types import InputMediaDice
 
-from LaylaRobot.events import register
+from Kaneki.events import register
 
 
 @register(pattern="^/dice(?: |$)(.*)")
@@ -76,4 +76,4 @@ __help__ = """
   - /dare : for random dare.
 """
 
-__mod_name__ = "Game"
+__mod_name__ = "ɢᴀᴍᴇ"
