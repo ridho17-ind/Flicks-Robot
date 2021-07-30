@@ -1,5 +1,5 @@
 <p align="center">
-   <img src="https://telegra.ph/file/594187d21dd78586cb440.jpg">
+   <img src="https://telegra.ph/file/dc5d571079198762aaeb4.jpg">
 </p>
 
 # Kaneki-ex
