@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from LaylaRobot import telethn
-from LaylaRobot.modules.helper_funcs.telethn.chatstatus import (
+from Kaneki import telethn
+from Kaneki.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
@@ -77,6 +77,6 @@ DEL_HANDLER = delete_messages, events.NewMessage(pattern="^[!/]del$")
 telethn.add_event_handler(*PURGE_HANDLER)
 telethn.add_event_handler(*DEL_HANDLER)
 
-__mod_name__ = "DETELE"
+__mod_name__ = "ᴘᴜʀɢᴇ"
 __command_list__ = ["del", "purge"]
 __handlers__ = [PURGE_HANDLER, DEL_HANDLER]
