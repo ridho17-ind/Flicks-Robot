@@ -1,6 +1,6 @@
-from LaylaRobot.mongo import client as db_x
+from Kaneki.mongo import client as db_x
 
-lydia = db_x["CAHTBOT"]
+lydia = db_x["CHATBOT"]
 
 
 def add_chat(chat_id):
