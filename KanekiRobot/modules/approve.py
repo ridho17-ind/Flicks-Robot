@@ -1,11 +1,11 @@
 import html
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
-from LaylaRobot import dispatcher, DRAGONS
-from LaylaRobot.modules.helper_funcs.extraction import extract_user
+from Kaneki.modules.disable import DisableAbleCommandHandler
+from Kaneki import dispatcher, DRAGONS
+from Kaneki.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import LaylaRobot.modules.sql.approve_sql as sql
-from LaylaRobot.modules.helper_funcs.chat_status import user_admin
-from LaylaRobot.modules.log_channel import loggable
+import Kaneki.modules.sql.approve_sql as sql
+from Kaneki.modules.helper_funcs.chat_status import user_admin
+from Kaneki.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
@@ -153,7 +153,7 @@ def unapproveall(update: Update, context: CallbackContext):
                 ],
                 [
                     InlineKeyboardButton(
-                        text="Cancel", callback_data="unapproveall_cancel"
+                        text="ᴄᴀɴᴄᴇʟ", callback_data="unapproveall_cancel"
                     )
                 ],
             ]
@@ -221,6 +221,6 @@ dispatcher.add_handler(APPROVAL)
 dispatcher.add_handler(UNAPPROVEALL)
 dispatcher.add_handler(UNAPPROVEALL_BTN)
 
-__mod_name__ = "Approvals"
+__mod_name__ = "ᴀᴘᴘʀᴏᴠᴀʟs"
 __command_list__ = ["approve", "unapprove", "approved", "approval"]
 __handlers__ = [APPROVE, DISAPPROVE, APPROVED, APPROVAL]
