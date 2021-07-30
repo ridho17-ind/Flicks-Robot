@@ -5,9 +5,9 @@ import time
 from functools import partial
 from contextlib import suppress
 
-import LaylaRobot.modules.sql.welcome_sql as sql
-import LaylaRobot
-from LaylaRobot import (
+import Kaneki.modules.sql.welcome_sql as sql
+import Kaneki
+from Kaneki import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
@@ -19,18 +19,18 @@ from LaylaRobot import (
     dispatcher,
     JOIN_LOGGER
 )
-from LaylaRobot.modules.helper_funcs.chat_status import (
+from Kaneki.modules.helper_funcs.chat_status import (
     is_user_ban_protected,
     user_admin,
 )
-from LaylaRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from LaylaRobot.modules.helper_funcs.msg_types import get_welcome_type
-from LaylaRobot.modules.helper_funcs.string_handling import (
+from Kaneki.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from Kaneki.modules.helper_funcs.msg_types import get_welcome_type
+from Kaneki.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
     markdown_parser,
 )
-from LaylaRobot.modules.log_channel import loggable
-from LaylaRobot.modules.sql.global_bans_sql import is_user_gbanned
+from Kaneki.modules.log_channel import loggable
+from Kaneki.modules.sql.global_bans_sql import is_user_gbanned
 from telegram import (
     ChatPermissions,
     InlineKeyboardButton,
@@ -265,7 +265,7 @@ def new_member(update: Update, context: CallbackContext):
             # Welcome yourself
             elif new_mem.id == bot.id:
                 creator = None
-                if not LaylaRobot.ALLOW_CHATS:
+                if not Kaneki.ALLOW_CHATS:
                     with suppress(BadRequest):
                          update.effective_message.reply_text(f"Groups are disabled for {bot.first_name}, I'm outta here.")
                     bot.leave_chat(update.effective_chat.id)
@@ -1094,22 +1094,22 @@ def __chat_settings__(chat_id, user_id):
 
 __help__ = """
 *Admins only:*
- ❍ /welcome <on/off>*:* enable/disable welcome messages.
- ❍ /welcome*:* shows current welcome settings.
- ❍ /welcome noformat*:* shows current welcome settings, without the formatting - useful to recycle your welcome messages!
- ❍ /goodbye*:* same usage and args as `/welcome`.
- ❍ /setwelcome <sometext>*:* set a custom welcome message. If used replying to media, uses that media.
- ❍ /setgoodbye <sometext>*:* set a custom goodbye message. If used replying to media, uses that media.
- ❍ /resetwelcome*:* reset to the default welcome message.
- ❍ /resetgoodbye*:* reset to the default goodbye message.
- ❍ /cleanwelcome <on/off>*:* On new member, try to delete the previous welcome message to avoid spamming the chat.
- ❍ /welcomemutehelp*:* gives information about welcome mutes.
- ❍ /cleanservice <on/off*:* deletes telegrams welcome/left service messages. 
+  /welcome <on/off>*:* enable/disable welcome messages.
+  /welcome*:* shows current welcome settings.
+  /welcome noformat*:* shows current welcome settings, without the formatting - useful to recycle your welcome messages!
+  /goodbye*:* same usage and args as `/welcome`.
+  /setwelcome <sometext>*:* set a custom welcome message. If used replying to media, uses that media.
+  /setgoodbye <sometext>*:* set a custom goodbye message. If used replying to media, uses that media.
+  /resetwelcome*:* reset to the default welcome message.
+  /resetgoodbye*:* reset to the default goodbye message.
+  /cleanwelcome <on/off>*:* On new member, try to delete the previous welcome message to avoid spamming the chat.
+  /welcomemutehelp*:* gives information about welcome mutes.
+  /cleanservice <on/off*:* deletes telegrams welcome/left service messages. 
  *Example:*
 user joined chat, user left chat.
 
 *Welcome markdown:* 
- ❍ /welcomehelp*:* view more formatting information for custom welcome/goodbye messages.
+  /welcomehelp*:* view more formatting information for custom welcome/goodbye messages.
 """
 
 NEW_MEM_HANDLER = MessageHandler(Filters.status_update.new_chat_members, new_member)
@@ -1144,7 +1144,7 @@ dispatcher.add_handler(CLEAN_SERVICE_HANDLER)
 dispatcher.add_handler(BUTTON_VERIFY_HANDLER)
 dispatcher.add_handler(WELCOME_MUTE_HELP)
 
-__mod_name__ = "Greetings"
+__mod_name__ = "ɢʀᴇᴇᴛɪɴɢs"
 __command_list__ = []
 __handlers__ = [
     NEW_MEM_HANDLER,
