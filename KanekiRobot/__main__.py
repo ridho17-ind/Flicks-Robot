@@ -367,8 +367,8 @@ def kaneki_about_callback(update, context):
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
-                 [
-                    InlineKeyboardButton(text="[ʙᴀᴄᴋ]", callback_data="layla_back")
+                 
+                    InlineKeyboardButton(text="[ʙᴀᴄᴋ]", callback_data="Kaneki_back")
                  ]
                 ]
             ),
@@ -701,7 +701,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(layla_about_callback, pattern=r"layla_")
+    about_callback_handler = CallbackQueryHandler(Kaneki_about_callback, pattern=r"Kaneki_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
