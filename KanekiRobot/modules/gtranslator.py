@@ -3,8 +3,8 @@ from google_trans_new import LANGUAGES, google_translator
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from LaylaRobot import dispatcher
-from LaylaRobot.modules.disable import DisableAbleCommandHandler
+from Kaneki import dispatcher
+from Kaneki.modules.disable import DisableAbleCommandHandler
 
 
 @run_async
@@ -91,10 +91,10 @@ def totranslate(update: Update, context: CallbackContext):
 
 
 __help__ = """
- ❍ /tr or /tl (language code) as reply to a long message
+  /tr or /tl (language code) as reply to a long message
 *Example:* 
- ❍ /tr en*:* translates something to english
- ❍ /tr hi-en*:* translates hindi to english
+  /tr en*:* translates something to english
+  /tr hi-en*:* translates hindi to english
 
 *Language Codes*
 `af,am,ar,az,be,bg,bn,bs,ca,ceb,co,cs,cy,da,de,el,en,eo,es,
@@ -109,6 +109,6 @@ TRANSLATE_HANDLER = DisableAbleCommandHandler(["tr", "tl"], totranslate)
 
 dispatcher.add_handler(TRANSLATE_HANDLER)
 
-__mod_name__ = "G-Trans"
+__mod_name__ = "ɢ-ᴛʀᴀɴs"
 __command_list__ = ["tr", "tl"]
 __handlers__ = [TRANSLATE_HANDLER]
