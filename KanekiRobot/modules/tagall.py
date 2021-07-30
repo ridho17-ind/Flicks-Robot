@@ -9,8 +9,8 @@
 
 from pyrogram import filters
 
-from LaylaRobot.pyrogramee.pluginshelper import admins_only, get_text
-from LaylaRobot import pbot
+from Kaneki.pyrogramee.pluginshelper import admins_only, get_text
+from Kaneki import pbot
 
 
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
@@ -30,7 +30,7 @@ async def tagall(client, message):
         await client.send_message(message.chat.id, j, parse_mode="html")
 
 
-__mod_name__ = "Tagall"
+__mod_name__ = "ᴛᴀɢᴀʟʟ"
 __help__ = """
 - /tagall : Tag everyone in a chat
 """
