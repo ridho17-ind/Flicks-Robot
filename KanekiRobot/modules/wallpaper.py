@@ -1,8 +1,8 @@
 from random import randint
 
 import requests as r
-from Kaneki import SUPPORT_CHAT, WALL_API, dispatcher
-from Kaneki.modules.disable import DisableAbleCommandHandler
+from KanekiRobot import SUPPORT_CHAT, WALL_API, dispatcher
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
 from telegram import Update
 from telegram.ext import CallbackContext, run_async
 
