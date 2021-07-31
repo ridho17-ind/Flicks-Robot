@@ -1,15 +1,15 @@
 
 import html
 
-from Kaneki import ALLOW_EXCL, CustomCommandHandler, dispatcher
-from Kaneki.modules.disable import DisableAbleCommandHandler
-from Kaneki.modules.helper_funcs.chat_status import (
+from KanekiRobot import ALLOW_EXCL, CustomCommandHandler, dispatcher
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
+from KanekiRobot.modules.helper_funcs.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
     user_admin,
 )
-from Kaneki.modules.sql import cleaner_sql as sql
+from KanekiRobot.modules.sql import cleaner_sql as sql
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
