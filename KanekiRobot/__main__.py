@@ -4,7 +4,7 @@ import re
 from sys import argv
 from typing import Optional
 
-from Kaneki import (
+from KanekiRobot import (
     ALLOW_EXCL,
     CERT_PATH,
     DONATION_LINK,
@@ -25,9 +25,9 @@ from Kaneki import (
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
-from Kaneki.modules import ALL_MODULES
-from Kaneki.modules.helper_funcs.chat_status import is_user_admin
-from Kaneki.modules.helper_funcs.misc import paginate_modules
+from KanekiRobot.modules import ALL_MODULES
+from KanekiRobot.modules.helper_funcs.chat_status import is_user_admin
+from KanekiRobot.modules.helper_funcs.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
@@ -75,22 +75,17 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ʜɪɪ, ɪ'ᴍ ᴋᴀɴᴇᴋɪ
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help `ᴛᴏ sᴇᴇ ᴀʟʟ [ғᴇᴀᴛᴜʀᴇs.`](https://telegra.ph/file/a997a0f3c5f04313f476c.jpg)
+`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help `ᴛᴏ sᴇᴇ ᴀʟʟ [ғᴇᴀᴛᴜʀᴇs.`](https://telegra.ph/file/b8aa819fbbdb65866c29b.jpg)
 Maintained by @rizexx
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/kanekiexbot?startgroup=true"),
+            text="➕️ ᴀᴅᴅ ᴋᴀɴᴇᴋɪ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/{}?startgroup=true".format(bot.username)),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="kaneki_"),
-        InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/nyanyiisinii"
-        ),
-    ],
-    [
+        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/nyanyiisinii"),
         InlineKeyboardButton(
             text="ᴏᴡɴᴇʀ ʙᴏᴛ", url=f"https://t.me/rizexx"
         ),
