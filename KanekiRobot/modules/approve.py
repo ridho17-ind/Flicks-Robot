@@ -1,11 +1,11 @@
 import html
-from Kaneki.modules.disable import DisableAbleCommandHandler
-from Kaneki import dispatcher, DRAGONS
-from Kaneki.modules.helper_funcs.extraction import extract_user
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
+from KanekiRobot import dispatcher, DRAGONS
+from KanekiRobot.modules.helper_funcs.extraction import extract_user
 from telegram.ext import CallbackContext, CallbackQueryHandler, Filters, run_async
-import Kaneki.modules.sql.approve_sql as sql
-from Kaneki.modules.helper_funcs.chat_status import user_admin
-from Kaneki.modules.log_channel import loggable
+import KanekiRobot.modules.sql.approve_sql as sql
+from KanekiRobot.modules.helper_funcs.chat_status import user_admin
+from KanekiRobot.modules.log_channel import loggable
 from telegram import ParseMode, InlineKeyboardMarkup, InlineKeyboardButton, Update
 from telegram.utils.helpers import mention_html
 from telegram.error import BadRequest
