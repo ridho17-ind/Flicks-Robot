@@ -13,7 +13,7 @@ from telegram.ext.dispatcher import run_async
 from telegram.error import BadRequest
 from telegram.utils.helpers import escape_markdown, mention_html
 
-from Kaneki import (
+from KanekiRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -24,15 +24,15 @@ from Kaneki import (
     dispatcher,
     sw,
 )
-from Kaneki.__main__ import STATS, TOKEN, USER_INFO
-import Kaneki.modules.sql.userinfo_sql as sql
-from Kaneki.modules.disable import DisableAbleCommandHandler
-from Kaneki.modules.sql.global_bans_sql import is_user_gbanned
-from Kaneki.modules.sql.afk_sql import is_afk, check_afk_status
-from Kaneki.modules.sql.users_sql import get_user_num_chats
-from Kaneki.modules.helper_funcs.chat_status import sudo_plus
-from Kaneki.modules.helper_funcs.extraction import extract_user
-from Kaneki import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
+from KanekiRobot.__main__ import STATS, TOKEN, USER_INFO
+import KanekiRobot.modules.sql.userinfo_sql as sql
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
+from KanekiRobot.modules.sql.global_bans_sql import is_user_gbanned
+from KanekiRobot.modules.sql.afk_sql import is_afk, check_afk_status
+from KanekiRobot.modules.sql.users_sql import get_user_num_chats
+from KanekiRobot.modules.helper_funcs.chat_status import sudo_plus
+from KanekiRobot.modules.helper_funcs.extraction import extract_user
+from KanekiRobot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
 def no_by_per(totalhp, percentage):
