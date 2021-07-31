@@ -2,8 +2,8 @@ import random
 import threading
 from typing import Union
 
-from Kaneki.modules.helper_funcs.msg_types import Types
-from Kaneki.modules.sql import BASE, SESSION
+from KanekiRobot.modules.helper_funcs.msg_types import Types
+from KanekiRobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
 DEFAULT_WELCOME = "Hey {first} how are you?"
