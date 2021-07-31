@@ -1,4 +1,4 @@
-from Kaneki.mongo import db
+from KanekiRobot.mongo import db
 from typing import Dict, List, Union
 
 
