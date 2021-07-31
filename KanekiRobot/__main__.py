@@ -85,7 +85,7 @@ buttons = [
             text="➕️ ᴀᴅᴅ ᴋᴀɴᴇᴋɪ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/{}?startgroup=true".format(bot.username)),
     ],
     [
-        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/nyanyiisinii"),
+        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rizexproject"),
         InlineKeyboardButton(
             text="ᴏᴡɴᴇʀ ʙᴏᴛ", url=f"https://t.me/rizexx"
         ),
