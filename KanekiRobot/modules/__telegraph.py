@@ -1,12 +1,12 @@
-from Kaneki.events import register
-from Kaneki import telethn as tbot
+from KanekiRobot.events import register
+from KanekiRobot import telethn as tbot
 TMP_DOWNLOAD_DIRECTORY = "./"
 from telethon import events
 import os
 from PIL import Image
 from datetime import datetime
 from telegraph import Telegraph, upload_file, exceptions
-Hero = "Kaneki"
+Hero = "KanekiRobot"
 telegraph = Telegraph()
 r = telegraph.create_account(short_name=Hero)
 auth_url = r["auth_url"]
