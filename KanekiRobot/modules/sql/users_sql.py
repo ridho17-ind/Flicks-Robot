@@ -1,7 +1,7 @@
 import threading
 
-from Kaneki import dispatcher
-from Kaneki.modules.sql import BASE, SESSION
+from KanekiRobot import dispatcher
+from KanekiRobot.modules.sql import BASE, SESSION
 from sqlalchemy import (
     Column,
     ForeignKey,
