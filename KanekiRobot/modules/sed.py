@@ -2,9 +2,9 @@ import sre_constants
 
 import regex
 import telegram
-from Kaneki import LOGGER, dispatcher
-from Kaneki.modules.disable import DisableAbleMessageHandler
-from Kaneki.modules.helper_funcs.regex_helper import infinite_loop_check
+from KanekiRobot import LOGGER, dispatcher
+from KanekiRobot.modules.disable import DisableAbleMessageHandler
+from KanekiRobot.modules.helper_funcs.regex_helper import infinite_loop_check
 from telegram import Update
 from telegram.ext import CallbackContext, Filters, run_async
 
