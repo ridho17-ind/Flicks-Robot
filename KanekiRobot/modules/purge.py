@@ -1,8 +1,8 @@
 import time
 from telethon import events
 
-from Kaneki import telethn
-from Kaneki.modules.helper_funcs.telethn.chatstatus import (
+from KanekiRobot import telethn
+from KanekiRobot.modules.helper_funcs.telethn.chatstatus import (
     can_delete_messages,
     user_is_admin,
 )
