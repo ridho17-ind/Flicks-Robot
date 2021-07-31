@@ -6,7 +6,7 @@ from telethon.errors import ChatAdminRequiredError, UserAdminInvalidError
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights, ChannelParticipantsAdmins
 
-from Kaneki import telethn, OWNER_ID, DEV_USERS, DRAGONS, DEMONS
+from KanekiRobot import telethn, OWNER_ID, DEV_USERS, DRAGONS, DEMONS
 
 # =================== CONSTANT ===================
 
@@ -55,7 +55,7 @@ async def zombies(event):
 
     con = event.pattern_match.group(1).lower()
     del_u = 0
-    del_status = "No Deleted Accounts Found, Group Is Clean."
+    del_status = "`Aku tidak menemukan akun terhapus, grup ini bersih.`"
 
     if con != "clean":
         find_zombies = await event.respond("Searching For Zombies...")
@@ -114,7 +114,7 @@ async def zombies(event):
     
     
 from telethon.tl.types import UserStatusLastMonth, UserStatusLastWeek, ChatBannedRights
-from Kaneki.events import register
+from KanekiRobot.events import register
 from telethon import *
 from telethon.tl.functions.channels import (EditBannedRequest)
                                             
