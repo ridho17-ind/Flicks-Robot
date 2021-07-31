@@ -1,6 +1,6 @@
-from Kaneki.events import register
-from Kaneki import OWNER_ID
-from Kaneki import telethn as tbot
+from KanekiRobot.events import register
+from KanekiRobot import OWNER_ID
+from KanekiRobot import telethn as tbot
 import os 
 from PIL import Image, ImageDraw, ImageFont
 import shutil 
