@@ -3,9 +3,9 @@ import re
 from typing import Optional
 
 import telegram
-from Kaneki import TIGERS, WOLVES, dispatcher
-from Kaneki.modules.disable import DisableAbleCommandHandler
-from Kaneki.modules.helper_funcs.chat_status import (
+from KanekiRobot import TIGERS, WOLVES, dispatcher
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
+from KanekiRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -14,16 +14,16 @@ from Kaneki.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from Kaneki.modules.helper_funcs.extraction import (
+from KanekiRobot.modules.helper_funcs.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from Kaneki.modules.helper_funcs.filters import CustomFilters
-from Kaneki.modules.helper_funcs.misc import split_message
-from Kaneki.modules.helper_funcs.string_handling import split_quotes
-from Kaneki.modules.log_channel import loggable
-from Kaneki.modules.sql import warns_sql as sql
+from KanekiRobot.modules.helper_funcs.filters import CustomFilters
+from KanekiRobot.modules.helper_funcs.misc import split_message
+from KanekiRobot.modules.helper_funcs.string_handling import split_quotes
+from KanekiRobot.modules.log_channel import loggable
+from KanekiRobot.modules.sql import warns_sql as sql
 from telegram import (
     CallbackQuery,
     Chat,
@@ -45,7 +45,7 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html
-from Kaneki.modules.sql.approve_sql import is_approved
+from KanekiRobot.modules.sql.approve_sql import is_approved
 
 WARN_HANDLER_GROUP = 9
 CURRENT_WARNING_FILTER_STRING = "<b>Current warning filters in this chat:</b>\n"
