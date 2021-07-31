@@ -1,21 +1,21 @@
 TRUTH = (
-    "Have you ghosted someone?"
-    "Have you ever walked in on your parents doing 'it'?",
-    "Who was the last person you liked the most? Why?",
-    "Have you ever been suspended from school?",
-    "If you had to choose between going naked or having your thoughts appear in thought bubbles above your head for everyone to read, which would you choose?",
-    "What’s the one thing you’re afraid to lose?",
-    "Do you like someone as of the moment?",
-    "One thing about your best friend you are jealous of?",
-    "Would you cheat on your boyfriend for a rich guy?",
-    "What is your biggest turn on?",
-    "When’s the last time you lied to your parents and why?",
-    "Describe your ideal partner.",
-    "What’s the scariest thing you’ve ever done?",
-    "Have you ever picked your nose and eaten it?",
-    "When’s the last time you lied to your parents and why?",
-    "Have you ever lied about your age to participate in a contest?",
-    "Have you ever been caught checking someone out?",
+    "Siapa pirst lope mu?"
+    "Ngaku! Pernah curi duit orang tua ga?",
+    "Berapa jumlah mantan lu?",
+    "Ceritakan masalah paling kamu ingat saat di sekolah",
+    "Pilih cowo ganteng atau cowo kaya? Tapi ga ganteng",
+    "Apabila kamu cewe bersedia kah untuk menjadi pacar owner ku @rizexx",
+    "Momen paling paling terbaik menurut lu selama idup apa?",
+    "Sebutkan 100 hal tentang teman kamu",
+    "Pilih cewe cantik atau cewe jadi²an?",
+    "Apa ketakutan yang paling besar menurut kamu?",
+    "Ceritakan hal sebelum kamu putus sama pacar",
+    "Tipe cewe idaman lu seperti apa? tete besarkah? Coba sebutkan seperti apa tipe lu",
+    "Tipe cowo idaman kamu seperti apa?",
+    "Coba tag orang yang paling kamu sayang disini.",
+    "Hayoo, kapan terakhir kali kamu anu?",
+    "Ceritakan kisah idup lu :')",
+    "@rizexx menurut ku dia ganteng, coba deh kamu chat, trus ajak pacaran hehe ⚠️WARNING ini khusus cewe ya!",
   
 )
 
