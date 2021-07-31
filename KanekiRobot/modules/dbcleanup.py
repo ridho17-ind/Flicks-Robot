@@ -1,9 +1,9 @@
 from time import sleep
 
-import Kaneki.modules.sql.global_bans_sql as gban_sql
-import Kaneki.modules.sql.users_sql as user_sql
-from Kaneki import DEV_USERS, OWNER_ID, dispatcher
-from Kaneki.modules.helper_funcs.chat_status import dev_plus
+import KanekiRobot.modules.sql.global_bans_sql as gban_sql
+import KanekiRobot.modules.sql.users_sql as user_sql
+from KanekiRobot import DEV_USERS, OWNER_ID, dispatcher
+from KanekiRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.error import BadRequest, Unauthorized
 from telegram.ext import (
