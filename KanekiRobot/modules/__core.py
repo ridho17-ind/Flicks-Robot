@@ -1,15 +1,15 @@
-from Kaneki import telethn as tbot
-from Kaneki.events import register
+from KanekiRobot import telethn as tbot
+from KanekiRobot.events import register
 import os
 import asyncio
 import os
 import time
 from datetime import datetime
-from Kaneki import OWNER_ID, DEV_USERS
-from Kaneki import TEMP_DOWNLOAD_DIRECTORY as path
-from Kaneki import TEMP_DOWNLOAD_DIRECTORY
+from KanekiRobot import OWNER_ID, DEV_USERS
+from KanekiRobot import TEMP_DOWNLOAD_DIRECTORY as path
+from KanekiRobot import TEMP_DOWNLOAD_DIRECTORY
 from datetime import datetime
-water = './LaylaRobot/resources/yone.jpg'
+water = './KanekiRobot/resources/yone.jpg'
 client = tbot
 
 @register(pattern=r"^/send ?(.*)")
