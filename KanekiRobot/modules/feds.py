@@ -6,8 +6,8 @@ import time
 import uuid
 from io import BytesIO
 
-import Kaneki.modules.sql.feds_sql as sql
-from Kaneki import (
+import KanekiRobot.modules.sql.feds_sql as sql
+from KanekiRobot import (
     EVENT_LOGS,
     LOGGER,
     SUPPORT_CHAT,
@@ -17,15 +17,15 @@ from Kaneki import (
     WOLVES,
     dispatcher,
 )
-from Kaneki.modules.disable import DisableAbleCommandHandler
-from Kaneki.modules.helper_funcs.alternate import send_message
-from Kaneki.modules.helper_funcs.chat_status import is_user_admin
-from Kaneki.modules.helper_funcs.extraction import (
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
+from KanekiRobot.modules.helper_funcs.alternate import send_message
+from KanekiRobot.modules.helper_funcs.chat_status import is_user_admin
+from KanekiRobot.modules.helper_funcs.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from Kaneki.modules.helper_funcs.string_handling import markdown_parser
+from KanekiRobot.modules.helper_funcs.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
