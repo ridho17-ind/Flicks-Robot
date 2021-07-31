@@ -3,7 +3,7 @@ import threading
 
 from sqlalchemy import Column, String, Boolean
 
-from Kaneki.modules.sql import SESSION, BASE
+from KanekiRobot.modules.sql import SESSION, BASE
 
 
 class Permissions(BASE):
