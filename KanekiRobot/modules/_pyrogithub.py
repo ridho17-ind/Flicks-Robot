@@ -1,8 +1,8 @@
 # © @Mr_Dark_Prince
 import aiohttp
 from pyrogram import filters
-from Kaneki import pbot
-from Kaneki.pyrogramee.errors import capture_err
+from KanekiRobot import pbot
+from KanekiRobot.pyrogramee.errors import capture_err
 
 
 __mod_name__ = "ɢɪᴛʜᴜʙ"
