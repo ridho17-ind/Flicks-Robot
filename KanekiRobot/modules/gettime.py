@@ -2,8 +2,8 @@ import datetime
 from typing import List
 
 import requests
-from Kaneki import TIME_API_KEY, dispatcher
-from Kaneki.modules.disable import DisableAbleCommandHandler
+from KanekiRobot import TIME_API_KEY, dispatcher
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
