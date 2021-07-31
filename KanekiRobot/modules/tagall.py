@@ -9,8 +9,8 @@
 
 from pyrogram import filters
 
-from Kaneki.pyrogramee.pluginshelper import admins_only, get_text
-from Kaneki import pbot
+from KanekiRobot.pyrogramee.pluginshelper import admins_only, get_text
+from KanekiRobot import pbot
 
 
 @pbot.on_message(filters.command("tagall") & ~filters.edited & ~filters.bot)
