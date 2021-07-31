@@ -1,6 +1,6 @@
 import requests
-from Kaneki import dispatcher
-from Kaneki.modules.disable import DisableAbleCommandHandler
+from KanekiRobot import dispatcher
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
