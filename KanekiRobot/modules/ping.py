@@ -5,9 +5,9 @@ import requests
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
-from Kaneki import StartTime, dispatcher
-from Kaneki.modules.helper_funcs.chat_status import sudo_plus
-from Kaneki.modules.disable import DisableAbleCommandHandler
+from KanekiRobot import StartTime, dispatcher
+from KanekiRobot.modules.helper_funcs.chat_status import sudo_plus
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
     "Telegram": "https://api.telegram.org",
