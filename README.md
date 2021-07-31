@@ -11,6 +11,6 @@ A modular Telegram Python bot running on python3 with a sqlalchemy database.
 
 ### 💜 Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rizkyoye/KanekiRobot/main)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rizkyoye/Kaneki-robot/main)
 
 
