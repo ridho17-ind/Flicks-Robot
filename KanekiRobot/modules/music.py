@@ -12,9 +12,9 @@ from tswift import Song
 from youtube_dl import YoutubeDL
 from youtubesearchpython import SearchVideos
 
-from Kaneki.conf import get_str_key
-from Kaneki.pyrogramee.pluginshelper import get_text, progress
-from Kaneki import pbot
+from KanekiRobot.conf import get_str_key
+from KanekiRobot.pyrogramee.pluginshelper import get_text, progress
+from KanekiRobot import pbot
 
 GENIUS = get_str_key("GENIUS_API_TOKEN", None)
 
