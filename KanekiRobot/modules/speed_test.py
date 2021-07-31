@@ -1,7 +1,7 @@
 import speedtest
-from Kaneki import DEV_USERS, dispatcher
-from Kaneki.modules.disable import DisableAbleCommandHandler
-from Kaneki.modules.helper_funcs.chat_status import dev_plus
+from KanekiRobot import DEV_USERS, dispatcher
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
+from KanekiRobot.modules.helper_funcs.chat_status import dev_plus
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
 
@@ -59,6 +59,6 @@ SPEED_TEST_CALLBACKHANDLER = CallbackQueryHandler(
 dispatcher.add_handler(SPEED_TEST_HANDLER)
 dispatcher.add_handler(SPEED_TEST_CALLBACKHANDLER)
 
-__mod_name__ = "SpeedTest"
+__mod_name__ = "sᴘᴇᴇᴅ"
 __command_list__ = ["speedtest"]
 __handlers__ = [SPEED_TEST_HANDLER, SPEED_TEST_CALLBACKHANDLER]
