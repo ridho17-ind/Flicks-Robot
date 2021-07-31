@@ -7,8 +7,8 @@ from telegram.ext import CommandHandler, CallbackQueryHandler, run_async
 
 import KanekiRobot.modules.sql.connection_sql as sql
 from KanekiRobot import dispatcher, DRAGONS, DEV_USERS
-from KanekiRobot.modules.helper_funcs import chat_status
-from KanekiRobot.modules.helper_funcs.alternate import send_message, typing_action
+from KanekiRobot.modules.helper_funsc import chat_status
+from KanekiRobot.modules.helper_funsc.alternate import send_message, typing_action
 
 user_admin = chat_status.user_admin
 
