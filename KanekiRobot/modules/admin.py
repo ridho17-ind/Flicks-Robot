@@ -5,9 +5,9 @@ from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, run_async
 from telegram.utils.helpers import mention_html
 
-from Kaneki import DRAGONS, dispatcher
-from Kaneki.modules.disable import DisableAbleCommandHandler
-from Kaneki.modules.helper_funcs.chat_status import (
+from KanekiRobor import DRAGONS, dispatcher
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
+from KanekiRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     can_pin,
     can_promote,
@@ -15,19 +15,19 @@ from Kaneki.modules.helper_funcs.chat_status import (
     user_admin,
     ADMIN_CACHE,
 )
-from Kaneki.helper_extra.admin_rights import (
+from KanekiRobot.helper_extra.admin_rights import (
     user_can_pin,
     user_can_promote,
     user_can_changeinfo,
 )
 
-from Kaneki.modules.helper_funcs.extraction import (
+from KanekiRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Kaneki.modules.log_channel import loggable
-from Kaneki.modules.helper_funcs.alternate import send_message
-from Kaneki.modules.helper_funcs.alternate import typing_action
+from KanekiRobot.modules.log_channel import loggable
+from KanekiRobot.modules.helper_funcs.alternate import send_message
+from KanekiRobot.modules.helper_funcs.alternate import typing_action
 
 
 @run_async
