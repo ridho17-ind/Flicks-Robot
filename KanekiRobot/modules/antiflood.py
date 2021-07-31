@@ -4,15 +4,15 @@ import re
 
 from telegram import Message, Chat, Update, User, ChatPermissions
 
-from Kaneki import TIGERS, WOLVES, dispatcher
-from Kaneki.modules.helper_funcs.chat_status import (
+from KanekiRobot import TIGERS, WOLVES, dispatcher
+from KanekiRobot.modules.helper_funcs.chat_status import (
     bot_admin,
     is_user_admin,
     user_admin,
     user_admin_no_reply,
 )
-from Kaneki.modules.log_channel import loggable
-from Kaneki.modules.sql import antiflood_sql as sql
+from KanekiRobot.modules.log_channel import loggable
+from KanekiRobot.modules.sql import antiflood_sql as sql
 from telegram.error import BadRequest
 from telegram.ext import (
     CallbackContext,
@@ -23,10 +23,10 @@ from telegram.ext import (
     run_async,
 )
 from telegram.utils.helpers import mention_html, escape_markdown
-from Kaneki.modules.helper_funcs.string_handling import extract_time
-from Kaneki.modules.connection import connected
-from Kaneki.modules.helper_funcs.alternate import send_message
-from Kaneki.modules.sql.approve_sql import is_approved
+from KanekiRobot.modules.helper_funcs.string_handling import extract_time
+from KanekiRobot.modules.connection import connected
+from KanekiRobot.modules.helper_funcs.alternate import send_message
+from KanekiRobot.modules.sql.approve_sql import is_approved
 
 FLOOD_GROUP = 3
 
