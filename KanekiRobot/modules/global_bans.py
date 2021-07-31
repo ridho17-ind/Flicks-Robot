@@ -14,9 +14,9 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html
 
-import Kaneki.modules.sql.global_bans_sql as sql
-from Kaneki.modules.sql.users_sql import get_user_com_chats
-from Kaneki import (
+import KanekiRobot.modules.sql.global_bans_sql as sql
+from KanekiRobot.modules.sql.users_sql import get_user_com_chats
+from KanekiRobot import (
     DEV_USERS,
     EVENT_LOGS,
     OWNER_ID,
@@ -30,16 +30,16 @@ from Kaneki import (
     sw,
     dispatcher,
 )
-from Kaneki.modules.helper_funcs.chat_status import (
+from KanekiRobot.modules.helper_funcs.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from Kaneki.modules.helper_funcs.extraction import (
+from KanekiRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Kaneki.modules.helper_funcs.misc import send_to_list
+from KanekiRobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
