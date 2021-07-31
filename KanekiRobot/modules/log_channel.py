@@ -3,7 +3,7 @@ from functools import wraps
 
 from telegram.ext import CallbackContext
 
-from Kaneki.modules.helper_funcs.misc import is_module_loaded
+from KanekiRobot.modules.helper_funcs.misc import is_module_loaded
 
 FILENAME = __name__.rsplit(".", 1)[-1]
 
@@ -13,9 +13,9 @@ if is_module_loaded(FILENAME):
     from telegram.ext import CommandHandler, JobQueue, run_async
     from telegram.utils.helpers import escape_markdown
 
-    from Kaneki import EVENT_LOGS, LOGGER, dispatcher
-    from Kaneki.modules.helper_funcs.chat_status import user_admin
-    from Kaneki.modules.sql import log_channel_sql as sql
+    from KanekiRobot import EVENT_LOGS, LOGGER, dispatcher
+    from KanekiRobot.modules.helper_funcs.chat_status import user_admin
+    from KanekiRobot.modules.sql import log_channel_sql as sql
 
     def loggable(func):
         @wraps(func)
