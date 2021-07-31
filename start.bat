@@ -1,4 +1,4 @@
 @echo off
-TITLE KanekiRobot
+TITLE Kaneki-robot
 :: Enables virtual env mode and then starts Rika
-env\scripts\activate.bat && py -m KanekiRobot
+env\scripts\activate.bat && py -m Kaneki-robot
