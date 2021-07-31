@@ -1,12 +1,12 @@
 import random, html
 
-from Kaneki import dispatcher
-from Kaneki.modules.disable import (
+from KanekiRobot import dispatcher
+from KanekiRobot.modules.disable import (
     DisableAbleCommandHandler,
     DisableAbleMessageHandler,
 )
-from Kaneki.modules.sql import afk_sql as sql
-from Kaneki.modules.users import get_user_id
+from KanekiRobot.modules.sql import afk_sql as sql
+from KanekiRobot.modules.users import get_user_id
 from telegram import MessageEntity, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, Filters, MessageHandler, run_async
