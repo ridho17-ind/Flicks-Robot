@@ -1,7 +1,7 @@
 import threading
 from typing import Union
 
-from Kaneki.modules.sql import BASE, SESSION
+from KanekiRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, Integer, String
 
 
