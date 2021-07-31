@@ -4,14 +4,14 @@ import nekos
 import requests
 from PIL import Image
 from telegram import ParseMode
-from Kaneki import dispatcher, updater
-import Kaneki.modules.sql.nsfw_sql as sql
-from Kaneki.modules.log_channel import gloggable
+from KanekiRobot import dispatcher, updater
+import KanekiRobot.modules.sql.nsfw_sql as sql
+from KanekiRobot.modules.log_channel import gloggable
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, run_async, CallbackContext
-from Kaneki.modules.helper_funcs.filters import CustomFilters
-from Kaneki.modules.helper_funcs.chat_status import user_admin
+from KanekiRobot.modules.helper_funcs.filters import CustomFilters
+from KanekiRobot.modules.helper_funcs.chat_status import user_admin
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
 @run_async
