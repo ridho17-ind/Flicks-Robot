@@ -9,20 +9,20 @@ from telegram.utils.helpers import mention_html
 
 from alphabet_detector import AlphabetDetector
 
-import Kaneki.modules.sql.locks_sql as sql
-from Kaneki import dispatcher, DRAGONS, LOGGER
-from Kaneki.modules.disable import DisableAbleCommandHandler
-from Kaneki.modules.helper_funcs.chat_status import (
+import KanekiRobot.modules.sql.locks_sql as sql
+from KanekiRobot import dispatcher, DRAGONS, LOGGER
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
+from KanekiRobot.modules.helper_funcs.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
     is_bot_admin,
     user_admin,
 )
-from Kaneki.modules.log_channel import loggable
-from Kaneki.modules.connection import connected
-from Kaneki.modules.sql.approve_sql import is_approved
-from Kaneki.modules.helper_funcs.alternate import send_message, typing_action
+from KanekiRobot.modules.log_channel import loggable
+from KanekiRobot.modules.connection import connected
+from KanekiRobot.modules.sql.approve_sql import is_approved
+from KanekiRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
