@@ -1,5 +1,5 @@
 from sqlalchemy import Boolean, Column, Integer, String, UnicodeText
-from Kaneki.modules.sql import BASE, SESSION
+from KanekiRobot.modules.sql import BASE, SESSION
 
 
 class Nightmode(BASE):
