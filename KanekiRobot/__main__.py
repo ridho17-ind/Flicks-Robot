@@ -119,7 +119,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("Kaneki-ex.modules." + module_name)
+    imported_module = importlib.import_module("KanekiRobot.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -386,7 +386,7 @@ def Source_about_callback(update, context):
     if query.data == "source_":
         query.message.edit_text(
             text=""" `heyo i'm kaneki`
-                 \nHere is the [Source Code](https://github.com/rizkyoye/Kaneki-ex) .""",
+                 \nHere is the [Source Code](https://github.com/rizkyoye/Kaneki-robot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
