@@ -5,9 +5,9 @@ import zipfile
 from telethon import types
 from telethon.tl import functions
 
-from Kaneki import TEMP_DOWNLOAD_DIRECTORY
-from Kaneki import telethn as client
-from Kaneki.events import register
+from KanekiRobot import TEMP_DOWNLOAD_DIRECTORY
+from KanekiRobot import telethn as client
+from KanekiRobot.events import register
 
 
 async def is_register_admin(chat, user):
