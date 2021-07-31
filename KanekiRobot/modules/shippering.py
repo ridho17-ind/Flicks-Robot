@@ -1,5 +1,5 @@
-from Kaneki import pbot as app
-from Kaneki.utils.dbfunc import get_couple, save_couple
+from KanekiRobot import pbot as app
+from KanekiRobot.utils.dbfunc import get_couple, save_couple
 from pyrogram import filters
 import random
 from datetime import datetime
