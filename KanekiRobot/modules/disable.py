@@ -3,8 +3,8 @@ from typing import Union
 
 from future.utils import string_types
 from KanekiRobot import dispatcher
-from KanekiRobot.modules.helper_funcs.handlers import CMD_STARTERS, SpamChecker
-from KanekiRobot.modules.helper_funcs.misc import is_module_loaded
+from KanekiRobot.modules.helper_funsc.handlers import CMD_STARTERS, SpamChecker
+from KanekiRobot.modules.helper_funsc.misc import is_module_loaded
 from telegram import ParseMode, Update
 from telegram.ext import (
     CallbackContext,
