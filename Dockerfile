@@ -64,12 +64,12 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-# Copy Python Requirements to /root/LaylaRobot
+# Copy Python Requirements to /root/Kaneki-robot
 RUN git clone -b shiken https://github.com/rizkyoye/Kaneki-robot /root/Kaneki-robot
 WORKDIR /root/Kaneki-robot
 
-#Copy config file to /root/LaylaRobot/LaylaRobot
-COPY ./Kaneki-ex/sample_config.py ./Kaneki-robot/config.py* /root/Kaneki-robot/Kaneki-robot/
+#Copy config file to /root/Kaneki-robot/Kaneki-robot
+COPY ./Kaneki-robot/sample_config.py ./Kaneki-robot/config.py* /root/Kaneki-robot/Kaneki-robot/
 
 ENV PATH="/home/bot/bin:$PATH"
 
@@ -77,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","Kaneki-robot"]
+CMD ["python3","-m","Kaneki"]
