@@ -2,18 +2,18 @@ import html
 import random
 import time
 
-import Kaneki.modules.fun_strings as fun_strings
-from Kaneki import dispatcher
-from Kaneki.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
-from Kaneki.modules.helper_funcs.chat_status import is_user_admin
-from Kaneki.modules.helper_funcs.alternate import typing_action
-from Kaneki.modules.helper_funcs.filters import CustomFilters
-from Kaneki.modules.helper_funcs.extraction import extract_user
+import KanekiRobot.modules.fun_strings as fun_strings
+from KanekiRobot import dispatcher
+from KanekiRobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
+from KanekiRobot.modules.helper_funcs.chat_status import is_user_admin
+from KanekiRobot.modules.helper_funcs.alternate import typing_action
+from KanekiRobot.modules.helper_funcs.filters import CustomFilters
+from KanekiRobot.modules.helper_funcs.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async, CommandHandler, Filters
 
-import Kaneki.modules.helper_funcs.string_store as fun
+import KanekiRobot.modules.helper_funcs.string_store as fun
 
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 
