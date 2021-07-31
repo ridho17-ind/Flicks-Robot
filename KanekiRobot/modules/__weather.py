@@ -1,4 +1,4 @@
-from Kaneki import telethn as tbot
+from KanekiRobot import telethn as tbot
 import io
 import os
 import time
@@ -9,9 +9,9 @@ from telethon.tl import functions
 from telethon.tl import types
 from telethon.tl.types import *
 
-from Kaneki import *
+from KanekiRobot import *
 
-from Kaneki.events import register
+from KanekiRobot.events import register
 
 
 async def is_register_admin(chat, user):
