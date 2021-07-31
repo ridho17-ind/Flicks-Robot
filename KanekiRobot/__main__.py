@@ -362,6 +362,7 @@ def kaneki_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
+               [
                 [
                  
                     InlineKeyboardButton(text="[ʙᴀᴄᴋ]", callback_data="Kaneki_back")
