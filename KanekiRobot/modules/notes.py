@@ -3,14 +3,14 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import Kaneki.modules.sql.notes_sql as sql
-from Kaneki import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from Kaneki.modules.disable import DisableAbleCommandHandler
-from Kaneki.modules.helper_funcs.handlers import MessageHandlerChecker
-from Kaneki.modules.helper_funcs.chat_status import user_admin, connection_status
-from Kaneki.modules.helper_funcs.misc import build_keyboard, revert_buttons
-from Kaneki.modules.helper_funcs.msg_types import get_note_type
-from Kaneki.modules.helper_funcs.string_handling import (
+import KanekiRobot.modules.sql.notes_sql as sql
+from KanekiRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
+from KanekiRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from KanekiRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from KanekiRobot.modules.helper_funcs.misc import build_keyboard, revert_buttons
+from KanekiRobot.modules.helper_funcs.msg_types import get_note_type
+from KanekiRobot.modules.helper_funcs.string_handling import (
     escape_invalid_curly_brackets,
 )
 from telegram import (
