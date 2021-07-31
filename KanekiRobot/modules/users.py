@@ -11,10 +11,10 @@ from telegram.ext import (
     run_async,
 )
 
-import Kaneki.modules.sql.users_sql as sql
-from Kaneki import DEV_USERS, LOGGER, OWNER_ID, dispatcher
-from Kaneki.modules.helper_funcs.chat_status import dev_plus, sudo_plus
-from Kaneki.modules.sql.users_sql import get_all_users
+import KanekiRobot.modules.sql.users_sql as sql
+from KanekiRobot import DEV_USERS, LOGGER, OWNER_ID, dispatcher
+from KanekiRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from KanekiRobot.modules.sql.users_sql import get_all_users
 
 USERS_GROUP = 4
 CHAT_GROUP = 5
