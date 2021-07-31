@@ -1,7 +1,7 @@
 from typing import List, Optional
 
-from Kaneki import LOGGER
-from Kaneki.modules.users import get_user_id
+from KanekiRobot import LOGGER
+from KanekiRobot.modules.users import get_user_id
 from telegram import Message, MessageEntity
 from telegram.error import BadRequest
 
