@@ -5,8 +5,8 @@ import textwrap
 import bs4
 import jikanpy
 import requests
-from Kaneki import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
-from Kaneki.modules.disable import DisableAbleCommandHandler
+from KanekiRobot import DEV_USERS, OWNER_ID, DRAGONS, dispatcher
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
 from telegram import (InlineKeyboardButton, InlineKeyboardMarkup, ParseMode,
                       Update)
 from telegram.ext import CallbackContext, CallbackQueryHandler, run_async
