@@ -1,8 +1,8 @@
 import os
-from Kaneki import telethn as tbot
+from KanekiRobot import telethn as tbot
 from geopy.geocoders import Nominatim
-from Kaneki.events import register
-from Kaneki import *
+from KanekiRobot.events import register
+from KanekiRobot import *
 from telethon import *
 from telethon.tl import *
 
