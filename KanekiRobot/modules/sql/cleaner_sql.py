@@ -1,6 +1,6 @@
 import threading
 
-from Kaneki.modules.sql import BASE, SESSION
+from KanekiRobot.modules.sql import BASE, SESSION
 from sqlalchemy import Boolean, Column, UnicodeText
 
 
