@@ -99,6 +99,7 @@ buttons = [
 HELP_STRINGS = """
 `ʜᴀɪ, ɪ'ᴍ ᴋᴀɴᴇᴋɪ`
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ`[.](https://telegra.ph/file/3486eca568218cdb74f24.jpg)
+"""
 
 Kaneki_IMG = "https://telegra.ph/file/3486eca568218cdb74f24.jpg"
 
