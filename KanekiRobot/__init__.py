@@ -200,7 +200,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from KanekiRobot.modules.helper_funcs.handlers import (
+from KanekiRobot.modules.helper_funsc.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
