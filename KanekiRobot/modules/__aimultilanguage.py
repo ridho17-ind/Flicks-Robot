@@ -11,10 +11,10 @@ import aiohttp
 from google_trans_new import google_translator
 from pyrogram import filters
 
-from Kaneki import BOT_ID
-from Kaneki.helper_extra.aichat import add_chat, get_session, remove_chat
-from Kaneki.pyrogramee.pluginshelper import admins_only, edit_or_reply
-from Kaneki import pbot as kaneki
+from KanekiRobot import BOT_ID
+from KanekiRobot.helper_extra.aichat import add_chat, get_session, remove_chat
+from KanekiRobot.pyrogramee.pluginshelper import admins_only, edit_or_reply
+from KanekiRobot import pbot as kaneki
 
 translator = google_translator()
 import requests
