@@ -26,8 +26,8 @@ from KanekiRobot import (
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
 from KanekiRobot.modules import ALL_MODULES
-from KanekiRobot.modules.helper_funcs.chat_status import is_user_admin
-from KanekiRobot.modules.helper_funcs.misc import paginate_modules
+from KanekiRobot.modules.helper_funsc.chat_status import is_user_admin
+from KanekiRobot.modules.helper_funsc.misc import paginate_modules
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
 from telegram.error import (
     BadRequest,
