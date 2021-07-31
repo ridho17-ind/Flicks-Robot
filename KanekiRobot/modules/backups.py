@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import Kaneki.modules.sql.notes_sql as sql
-from Kaneki import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
-from Kaneki.__main__ import DATA_IMPORT
-from Kaneki.modules.helper_funcs.chat_status import user_admin
-from Kaneki.modules.helper_funcs.alternate import typing_action
+import KanekiRobot.modules.sql.notes_sql as sql
+from KanekiRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
+from KanekiRobot.__main__ import DATA_IMPORT
+from KanekiRobot.modules.helper_funcs.chat_status import user_admin
+from KanekiRobot.modules.helper_funcs.alternate import typing_action
 
-# from Kaneki.modules.rules import get_rules
-import Kaneki.modules.sql.rules_sql as rulessql
+# from KanekiRobot.modules.rules import get_rules
+import KanekiRobot.modules.sql.rules_sql as rulessql
 
-# from Kaneki.modules.sql import warns_sql as warnssql
-import Kaneki.modules.sql.blacklist_sql as blacklistsql
-from Kaneki.modules.sql import disable_sql as disabledsql
+# from KanekiRobot.modules.sql import warns_sql as warnssql
+import KanekiRobot.modules.sql.blacklist_sql as blacklistsql
+from KanekiRobot.modules.sql import disable_sql as disabledsql
 
-# from Kaneki.modules.sql import cust_filters_sql as filtersql
-# import Kaneki.modules.sql.welcome_sql as welcsql
-import Kaneki.modules.sql.locks_sql as locksql
-from Kaneki.modules.connection import connected
+# from KanekiRobot.modules.sql import cust_filters_sql as filtersql
+# import KanekiRobot.modules.sql.welcome_sql as welcsql
+import KanekiRobot.modules.sql.locks_sql as locksql
+from KanekiRobot.modules.connection import connected
 
 
 @run_async
