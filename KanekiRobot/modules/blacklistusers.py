@@ -1,7 +1,7 @@
 # Module to blacklist users and prevent them from using commands by @TheRealPhoenix
 import html
-import Kaneki.modules.sql.blacklistusers_sql as sql
-from Kaneki import (
+import KanekiRobot.modules.sql.blacklistusers_sql as sql
+from KanekiRobot import (
     DEV_USERS,
     OWNER_ID,
     DRAGONS,
@@ -10,12 +10,12 @@ from Kaneki import (
     WOLVES,
     dispatcher,
 )
-from Kaneki.modules.helper_funcs.chat_status import dev_plus
-from Kaneki.modules.helper_funcs.extraction import (
+from KanekiRobot.modules.helper_funcs.chat_status import dev_plus
+from KanekiRobot.modules.helper_funcs.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from Kaneki.modules.log_channel import gloggable
+from KanekiRobot.modules.log_channel import gloggable
 from telegram import ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, run_async
