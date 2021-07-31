@@ -1,4 +1,4 @@
-from Kaneki import LOAD, LOGGER, NO_LOAD
+from KanekiRobot import LOAD, LOGGER, NO_LOAD
 
 
 def __list_all_modules():
