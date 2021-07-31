@@ -15,25 +15,25 @@ from telegram.ext import (
 )
 from telegram.utils.helpers import mention_html, escape_markdown
 
-from Kaneki import dispatcher, LOGGER, DRAGONS
-from Kaneki.modules.disable import DisableAbleCommandHandler
-from Kaneki.modules.helper_funcs.handlers import MessageHandlerChecker
-from Kaneki.modules.helper_funcs.chat_status import user_admin
-from Kaneki.modules.helper_funcs.extraction import extract_text
-from Kaneki.modules.helper_funcs.filters import CustomFilters
-from Kaneki.modules.helper_funcs.misc import build_keyboard_parser
-from Kaneki.modules.helper_funcs.msg_types import get_filter_type
-from Kaneki.modules.helper_funcs.string_handling import (
+from KanekiRobot import dispatcher, LOGGER, DRAGONS
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
+from KanekiRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from KanekiRobot.modules.helper_funcs.chat_status import user_admin
+from KanekiRobot.modules.helper_funcs.extraction import extract_text
+from KanekiRobot.modules.helper_funcs.filters import CustomFilters
+from KanekiRobot.modules.helper_funcs.misc import build_keyboard_parser
+from KanekiRobot.modules.helper_funcs.msg_types import get_filter_type
+from KanekiRobot.modules.helper_funcs.string_handling import (
     split_quotes,
     button_markdown_parser,
     escape_invalid_curly_brackets,
     markdown_to_html,
 )
-from Kaneki.modules.sql import cust_filters_sql as sql
+from KanekiRobot.modules.sql import cust_filters_sql as sql
 
-from Kaneki.modules.connection import connected
+from KanekiRobot.modules.connection import connected
 
-from Kaneki.modules.helper_funcs.alternate import send_message, typing_action
+from KanekiRobot.modules.helper_funcs.alternate import send_message, typing_action
 
 HANDLER_GROUP = 10
 
