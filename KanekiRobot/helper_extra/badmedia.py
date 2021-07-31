@@ -1,4 +1,4 @@
-from Kaneki import telethn as tbot
+from KanekiRobot import telethn as tbot
 import requests
 import time
 
