@@ -82,7 +82,7 @@ Maintained by @rizexx
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴋᴀɴᴇᴋɪ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/{}?startgroup=true".format(bot.username)),
+            text="➕️ ᴀᴅᴅ ᴋᴀɴᴇᴋɪ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/kanekiexbot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rizexproject"),
