@@ -6,8 +6,8 @@ import requests
 import wget
 from pyrogram import filters
 
-from Kaneki import pbot as Jebot
-from Kaneki.pyrogramee.dark import get_arg
+from KanekiRobot import pbot as Jebot
+from KanekiRobot.pyrogramee.dark import get_arg
 
 
 @Jebot.on_message(filters.command("saavn"))
@@ -44,7 +44,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from Kaneki import pbot as Kaneki
+from KanekiRobot import pbot as KanekiRobot
 
 ARQ = "https://thearq.tech/"
 
@@ -98,7 +98,7 @@ import os
 import aiofiles
 import aiohttp
 from pyrogram import filters
-from Kaneki import pbot as ASUNA
+from KanekiRobot import pbot as ASUNA
 
 ARQ = "https://thearq.tech/"
 
