@@ -1,7 +1,7 @@
 from math import ceil
 from typing import Dict, List
 
-from Kaneki import NO_LOAD
+from KanekiRobot import NO_LOAD
 from telegram import MAX_MESSAGE_LENGTH, Bot, InlineKeyboardButton, ParseMode
 from telegram.error import TelegramError
 
