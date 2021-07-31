@@ -1,17 +1,17 @@
 import html
 from typing import Optional
 
-import Kaneki.modules.sql.blsticker_sql as sql
-from Kaneki import LOGGER, dispatcher
-from Kaneki.modules.connection import connected
-from Kaneki.modules.disable import DisableAbleCommandHandler
-from Kaneki.modules.helper_funcs.alternate import send_message
-from Kaneki.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from Kaneki.modules.helper_funcs.misc import split_message
-from Kaneki.modules.helper_funcs.string_handling import extract_time
+import KanekiRobot.modules.sql.blsticker_sql as sql
+from KanekiRobot import LOGGER, dispatcher
+from KanekiRobot.modules.connection import connected
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
+from KanekiRobot.modules.helper_funcs.alternate import send_message
+from KanekiRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from KanekiRobot.modules.helper_funcs.misc import split_message
+from KanekiRobot.modules.helper_funcs.string_handling import extract_time
 
-from Kaneki.modules.log_channel import loggable
-from Kaneki.modules.warns import warn
+from KanekiRobot.modules.log_channel import loggable
+from KanekiRobot.modules.warns import warn
 from telegram import Chat, Message, ParseMode, Update, User, ChatPermissions
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, CommandHandler, Filters, MessageHandler
