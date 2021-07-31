@@ -1,6 +1,6 @@
-from Kaneki.modules.helper_funcs.chat_status import user_admin
-from Kaneki.modules.disable import DisableAbleCommandHandler
-from Kaneki import dispatcher
+from KanekiRobot.modules.helper_funcs.chat_status import user_admin
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
+from KanekiRobot import dispatcher
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 from telegram import ParseMode, Update
