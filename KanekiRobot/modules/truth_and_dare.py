@@ -1,9 +1,9 @@
 import html
 import random
-import Kaneki.modules.truth_and_dare_string as truth_and_dare_string
-from Kaneki import dispatcher
+import KanekiRobot.modules.truth_and_dare_string as truth_and_dare_string
+from KanekiRobot import dispatcher
 from telegram import ParseMode, Update, Bot
-from Kaneki.modules.disable import DisableAbleCommandHandler
+from KanekiRobot.modules.disable import DisableAbleCommandHandler
 from telegram.ext import CallbackContext, run_async
 
 @run_async
