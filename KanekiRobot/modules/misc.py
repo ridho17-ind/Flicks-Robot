@@ -1,4 +1,4 @@
-from KanekiRobot.modules.helper_funcs.chat_status import user_admin
+from KanekiRobot.modules.helper_funsc.chat_status import user_admin
 from KanekiRobot.modules.disable import DisableAbleCommandHandler
 from KanekiRobot import dispatcher
 
