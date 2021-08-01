@@ -2,8 +2,8 @@ from typing import Optional
 
 import KanekiRobot.modules.sql.rules_sql as sql
 from KanekiRobot import dispatcher
-from KanekiRobot.modules.helper_funcs.chat_status import user_admin
-from KanekiRobot.modules.helper_funcs.string_handling import markdown_parser
+from KanekiRobot.modules.helper_funsc.chat_status import user_admin
+from KanekiRobot.modules.helper_funsc.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
