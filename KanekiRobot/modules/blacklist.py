@@ -9,15 +9,15 @@ from telegram.utils.helpers import mention_html
 import KanekiRobot.modules.sql.blacklist_sql as sql
 from KanekiRobot import dispatcher, LOGGER
 from KanekiRobot.modules.disable import DisableAbleCommandHandler
-from KanekiRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
-from KanekiRobot.modules.helper_funcs.extraction import extract_text
-from KanekiRobot.modules.helper_funcs.misc import split_message
+from KanekiRobot.modules.helper_funsc.chat_status import user_admin, user_not_admin
+from KanekiRobot.modules.helper_funsc.extraction import extract_text
+from KanekiRobot.modules.helper_funsc.misc import split_message
 from KanekiRobot.modules.log_channel import loggable
 from KanekiRobot.modules.warns import warn
-from KanekiRobot.modules.helper_funcs.string_handling import extract_time
+from KanekiRobot.modules.helper_funsc.string_handling import extract_time
 from KanekiRobot.modules.connection import connected
 from KanekiRobot.modules.sql.approve_sql import is_approved
-from KanekiRobot.modules.helper_funcs.alternate import send_message, typing_action
+from KanekiRobot.modules.helper_funsc.alternate import send_message, typing_action
 
 BLACKLIST_GROUP = 11
 
