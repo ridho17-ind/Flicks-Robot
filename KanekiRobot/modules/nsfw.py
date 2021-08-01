@@ -10,8 +10,8 @@ from KanekiRobot.modules.log_channel import gloggable
 from telegram import Message, Chat, Update, Bot, MessageEntity
 from telegram.error import BadRequest, RetryAfter, Unauthorized
 from telegram.ext import CommandHandler, run_async, CallbackContext
-from KanekiRobot.modules.helper_funcs.filters import CustomFilters
-from KanekiRobot.modules.helper_funcs.chat_status import user_admin
+from KanekiRobot.modules.helper_funsc.filters import CustomFilters
+from KanekiRobot.modules.helper_funsc.chat_status import user_admin
 from telegram.utils.helpers import mention_html, mention_markdown, escape_markdown
 
 @run_async
