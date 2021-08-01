@@ -74,26 +74,26 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`ʜᴀɪ, ɪ'ᴍ ᴋᴀɴᴇᴋɪ ᴀ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ.`
-• `ᴛʀʏ` /help `ᴛᴏ sᴇᴇ ᴛʜᴇ ғᴇᴀᴛᴜʀᴇs`
-`ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ` [ʀɪᴢ-ᴇx](https://t.me/rizexx)
+`**ʜᴀɪ,** **ɪ'ᴍ ᴋᴀɴᴇᴋɪ ᴀ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ.**`
+• `**ᴛʀʏ**` **/help** `**ᴛᴏ sᴇᴇ ᴛʜᴇ ғᴇᴀᴛᴜʀᴇs**`
+`**ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ**` [Skyzo](https://t.me/XFLSkyzo)
 """
 
 buttons = [
         [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/kanekiexbot?startgroup=true"),
+            text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/FlicksManagerBot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="Kaneki_"),
         InlineKeyboardButton(
-            text="ᴄʜᴀɴɴᴇʟ ɪɴғᴏ", url=f"https://t.me/rizexproject"
+            text="ᴄʜᴀɴɴᴇʟ ɪɴғᴏ", url=f"https://t.me/SadRoomsInfo"
         ),
     ],
     [
-        InlineKeyboardButton(text="ɢʀᴏᴜᴘ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/kanekisupport"),
+        InlineKeyboardButton(text="ɢʀᴏᴜᴘ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/Userbot_Support_Id"),
         InlineKeyboardButton(
-            text="ᴄʀᴇᴀᴛᴏʀ", url=f"https://t.me/rizexx"
+            text="ᴄʀᴇᴀᴛᴏʀ", url=f"https://t.me/XFLSkyzo"
         ),
     ],
     [
@@ -613,7 +613,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Settings⚙️",
+                                text="Settings",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
