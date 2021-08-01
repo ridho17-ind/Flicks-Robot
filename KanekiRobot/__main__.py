@@ -75,8 +75,8 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 ʜɪɪ, ɪ'ᴍ ᴋᴀɴᴇᴋɪ
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help `ᴛᴏ sᴇᴇ ᴀʟʟ [ғᴇᴀᴛᴜʀᴇs.`](https://telegra.ph/file/b8aa819fbbdb65866c29b.jpg)
-Maintained by @rizexx
+`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help `ᴛᴏ sᴇᴇ ᴀʟʟ ғᴇᴀᴛᴜʀᴇs.`[✨](https://telegra.ph/file/b8aa819fbbdb65866c29b.jpg)
+`ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ` @rizexx
 """
 
 buttons = [
@@ -365,7 +365,7 @@ def Kaneki_about_callback(update, context):
                [
                 [
                  
-                    InlineKeyboardButton(text="[ʙᴀᴄᴋ]", callback_data="Kaneki_back")
+                    InlineKeyboardButton(text="[ʙᴀᴄᴋ]", callback_data="help_back")
                  ]
                 ]
             ),
@@ -416,12 +416,12 @@ def get_help(update: Update, context: CallbackContext):
         if len(args) >= 2 and any(args[1].lower() == x for x in HELPABLE):
             module = args[1].lower()
             update.effective_message.reply_text(
-                f"Contact me in PM to get help of {module.capitalize()}",
+                f"Tekan help dibawah untuk mengetahuinya! {module.capitalize()}",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                text="Help",
+                                text="ʜᴇʟᴘ?",
                                 url="t.me/{}?start=ghelp_{}".format(
                                     context.bot.username, module
                                 ),
@@ -437,7 +437,7 @@ def get_help(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            text="Help",
+                            text="ʜᴇʟᴘ?",
                             url="t.me/{}?start=help".format(context.bot.username),
                         )
                     ]
