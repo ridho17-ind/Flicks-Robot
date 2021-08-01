@@ -101,7 +101,7 @@ HELP_STRINGS = """
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ`[.](https://telegra.ph/file/3486eca568218cdb74f24.jpg)
 """
 
-Kaneki_IMG = "https://telegra.ph/file/3486eca568218cdb74f24.jpg"
+KanekiRobot_IMG = "https://telegra.ph/file/3486eca568218cdb74f24.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project [riz-ex](t.me/rizexx) \
@@ -347,7 +347,7 @@ def help_button(update, context):
 
 
 @run_async
-def kaneki_about_callback(update, context):
+def kanekiRobot_about_callback(update, context):
     query = update.callback_query
     if query.data == "kaneki":
         query.message.edit_text(
@@ -365,12 +365,12 @@ def kaneki_about_callback(update, context):
                [
                 [
                  
-                    InlineKeyboardButton(text="[ʙᴀᴄᴋ]", callback_data="Kaneki_back")
+                    InlineKeyboardButton(text="[ʙᴀᴄᴋ]", callback_data="KanekiRobot_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "kaneki_back":
+    elif query.data == "kanekiRobot_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -698,7 +698,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(Kaneki_about_callback, pattern=r"Kaneki_")
+    about_callback_handler = CallbackQueryHandler(KanekiRobot_about_callback, pattern=r"KanekiRobot_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
