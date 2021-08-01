@@ -22,8 +22,7 @@ LOGGER = logging.getLogger(__name__)
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 6:
     LOGGER.error(
-    "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot quitting."
-    sys.exit(1)
+        "You MUST have a python version of at least 3.6! Multiple features depend on this. Bot quitting."
     )
     quit(1)
 
@@ -190,7 +189,7 @@ else:
 
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
-telethn = TelegramClient("Kaneki", API_ID, API_HASH)
+telethn = TelegramClient("kaneki", API_ID, API_HASH)
 pbot = Client("kanekipbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
 dispatcher = updater.dispatcher
 
@@ -201,7 +200,7 @@ DEMONS = list(DEMONS)
 TIGERS = list(TIGERS)
 
 # Load at end to ensure all prev variables have been set
-from KanekiRobot.modules.helper_funsc.handlers import (
+from KanekiRobot.modules.helper_funcs.handlers import (
     CustomCommandHandler,
     CustomMessageHandler,
     CustomRegexHandler,
