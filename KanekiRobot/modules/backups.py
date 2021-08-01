@@ -8,8 +8,8 @@ from telegram.ext import CommandHandler, run_async
 import KanekiRobot.modules.sql.notes_sql as sql
 from KanekiRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER, SUPPORT_CHAT
 from KanekiRobot.__main__ import DATA_IMPORT
-from KanekiRobot.modules.helper_funcs.chat_status import user_admin
-from KanekiRobot.modules.helper_funcs.alternate import typing_action
+from KanekiRobot.modules.helper_funsc.chat_status import user_admin
+from KanekiRobot.modules.helper_funsc.alternate import typing_action
 
 # from KanekiRobot.modules.rules import get_rules
 import KanekiRobot.modules.sql.rules_sql as rulessql
