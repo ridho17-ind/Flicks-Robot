@@ -47,7 +47,7 @@ en_chats = []
 )
 @admins_only
 async def hmm(_, message):
-    global layla_chats
+    global kaneki_chats
     if len(message.command) != 2:
         await message.reply_text(
             "I only recognize `/chatbot on` and /chatbot `off only`"
@@ -59,10 +59,10 @@ async def hmm(_, message):
         lel = await edit_or_reply(message, "`Processing...`")
         lol = add_chat(int(message.chat.id))
         if not lol:
-            await lel.edit("layla AI Already Activated In This Chat")
+            await lel.edit("kaneki AI Already Activated In This Chat")
             return
         await lel.edit(
-            f"layla AI Successfully Added For Users In The Chat {message.chat.id}"
+            f"kaneki AI Successfully Added For Users In The Chat {message.chat.id}"
         )
 
     elif status == "OFF" or status == "off" or status == "Off":
@@ -130,7 +130,7 @@ async def hmm(client, message):
 
         pro = result["message"]
         try:
-            await layla.send_chat_action(message.chat.id, "typing")
+            await kaneki.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
@@ -196,13 +196,13 @@ async def hmm(client, message):
             except:
                 return
         try:
-            await layla.send_chat_action(message.chat.id, "typing")
+            await kaneki.send_chat_action(message.chat.id, "typing")
             await message.reply_text(pro)
         except CFError:
             return
 
 
-@layla.on_message(
+@kaneki.on_message(
     filters.text & filters.private & ~filters.edited & filters.reply & ~filters.bot
 )
 async def inuka(client, message):
@@ -268,14 +268,14 @@ async def inuka(client, message):
     if not "en" in lan and not lan == "":
         pro = translator.translate(pro, lang_tgt=lan[0])
     try:
-        await layla.send_chat_action(message.chat.id, "typing")
+        await kaneki.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
 
 
-@layla.on_message(
-    filters.regex("layla|layla|Layla|Layla|Layla")
+@kaneki.on_message(
+    filters.regex("kaneki|kaneki|kaneki|kaneki|kaneki")
     & ~filters.bot
     & ~filters.via_bot
     & ~filters.forwarded
@@ -348,7 +348,7 @@ async def inuka(client, message):
         except Exception:
             return
     try:
-        await layla.send_chat_action(message.chat.id, "typing")
+        await kaneki.send_chat_action(message.chat.id, "typing")
         await message.reply_text(pro)
     except CFError:
         return
@@ -356,7 +356,7 @@ async def inuka(client, message):
 
 __help__ = """
 <b> Chatbot </b>
-layla AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
+kaneki AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES
  - /chatbot [ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  - /chatbot EN : Enables English only chatbot
  
