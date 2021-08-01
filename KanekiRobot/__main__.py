@@ -349,7 +349,7 @@ def help_button(update, context):
 @run_async
 def Kaneki_about_callback(update, context):
     query = update.callback_query
-    if query.data == "Kaneki":
+    if query.data == "Kaneki_":
         query.message.edit_text(
             text="""  ɪ'ᴍ ᴋᴀɴᴇᴋɪ, ᴀ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ.
                  \n I can restrict users.
