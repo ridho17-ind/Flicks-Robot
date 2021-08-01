@@ -2,7 +2,7 @@ import random
 import threading
 from typing import Union
 
-from KanekiRobot.modules.helper_funcs.msg_types import Types
+from KanekiRobot.modules.helper_funsc.msg_types import Types
 from KanekiRobot.modules.sql import BASE, SESSION
 from sqlalchemy import BigInteger, Boolean, Column, Integer, String, UnicodeText
 
