@@ -81,7 +81,7 @@ async def lego(event):
        return
     else:
        pass
- await event.reply('Creating your logo...wait!')
+ await event.reply('Creating Your Logo...Wait!')
  try:
     text = event.pattern_match.group(1)
     img = Image.open('./KanekiRobot/resources/1e0e5d446028d6e77385b4dd5d6e2254.jpg')
@@ -100,7 +100,7 @@ async def lego(event):
     draw.text((x, y), text, font=font, fill="black", stroke_width=15, stroke_fill="yellow")
     fname2 = "LogoByKaneki.png"
     img.save(fname2, "png")
-    await tbot.send_file(event.chat_id, fname2, caption="Made By @kanekiexbot")
+    await tbot.send_file(event.chat_id, fname2, caption="**Support Channel @SadRoomsInfo**")
     if os.path.exists(fname2):
             os.remove(fname2)
  except Exception as e:
