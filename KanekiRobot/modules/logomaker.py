@@ -84,7 +84,7 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./KanekiRobot/resources')
+    img = Image.open('./KanekiRobot/resources/1e0e5d446028d6e77385b4dd5d6e2254.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
@@ -124,7 +124,7 @@ async def lego(event):
  await event.reply('Creating your logo...wait!')
  try:
     text = event.pattern_match.group(1)
-    img = Image.open('./KanekiRobot/resources')
+    img = Image.open('./KanekiRobot/resources/7ff02927132724dfc95db65bce4df3ce.jpg')
     draw = ImageDraw.Draw(img)
     image_widthz, image_heightz = img.size
     pointsize = 500
