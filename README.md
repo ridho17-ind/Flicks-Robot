@@ -9,7 +9,7 @@ A modular Telegram Python bot running on python3 with a sqlalchemy database.
 
 ### Found me on telegram [Kaneki-ex](https://t.me/kanekiexbot)
 
-### 💜 Heroku
+# DEPLOY ON HEROKU :
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/rizkyoye/Kaneki-robot/main)
 
