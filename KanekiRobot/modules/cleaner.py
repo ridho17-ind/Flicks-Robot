@@ -3,7 +3,7 @@ import html
 
 from KanekiRobot import ALLOW_EXCL, CustomCommandHandler, dispatcher
 from KanekiRobot.modules.disable import DisableAbleCommandHandler
-from KanekiRobot.modules.helper_funcs.chat_status import (
+from KanekiRobot.modules.helper_funsc.chat_status import (
     bot_can_delete,
     connection_status,
     dev_plus,
