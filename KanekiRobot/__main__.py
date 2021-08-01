@@ -74,19 +74,26 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜɪɪ, ɪ'ᴍ ᴋᴀɴᴇᴋɪ
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ`[!](https://telegra.ph/file/b8aa819fbbdb65866c29b.jpg) /help
+`ʜɪɪ, ɪ'ᴍ ᴋᴀɴᴇᴋɪ`
+`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ!` `ʜɪᴛ` /help
+`ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ` [riz-ex](https://t.me/rizexx)
 """
 
 buttons = [
-    [
+        [
         InlineKeyboardButton(
-            text="➕️ ᴀᴅᴅ ᴋᴀɴᴇᴋɪ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/kanekiexbot?startgroup=true"),
+            text="➕️ ᴀᴅᴅ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕️", url="t.me/kanekiexbot?startgroup=true"),
     ],
     [
-        InlineKeyboardButton(text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rizexproject"),
+        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="Kaneki_"),
         InlineKeyboardButton(
-            text="ᴏᴡɴᴇʀ ʙᴏᴛ", url=f"https://t.me/rizexx"
+            text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rizexproject"
+        ),
+    ],
+    [
+        InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=f"https://t.me/nyanyiisinii"),
+        InlineKeyboardButton(
+            text="ᴄʀᴇᴀᴛᴏʀ", url=f"https://t.me/rizexx"
         ),
     ],
     [
