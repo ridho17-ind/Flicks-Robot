@@ -1,4 +1,4 @@
-from KanekiRobor import telethn as tbot
+from KanekiRobot import telethn as tbot
 import os
 
 from gtts import gTTS
