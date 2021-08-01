@@ -90,14 +90,14 @@ async def lego(event):
     pointsize = 500
     fillcolor = "gold"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./KanekiRobot/resources/Chopsic.otf", 330)
+    font = ImageFont.truetype("./KanekiRobot/resources/Chopsic.otf", 130)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
-    draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
+    draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(200, 200, 200))
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
-    draw.text((x, y), text, font=font, fill="black", stroke_width=25, stroke_fill="yellow")
+    draw.text((x, y), text, font=font, fill="black", stroke_width=15, stroke_fill="yellow")
     fname2 = "LogoByKaneki.png"
     img.save(fname2, "png")
     await tbot.send_file(event.chat_id, fname2, caption="Made By @kanekiexbot")
@@ -130,11 +130,11 @@ async def lego(event):
     pointsize = 500
     fillcolor = "white"
     shadowcolor = "blue"
-    font = ImageFont.truetype("./KanekiRobot/resources/Maghrib.ttf", 1000)
+    font = ImageFont.truetype("./KanekiRobot/resources/Maghrib.ttf", 300)
     w, h = draw.textsize(text, font=font)
     h += int(h*0.21)
     image_width, image_height = img.size
-    draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(255, 255, 255))
+    draw.text(((image_widthz-w)/2, (image_heightz-h)/2), text, font=font, fill=(200, 200, 200))
     x = (image_widthz-w)/2
     y= ((image_heightz-h)/2+6)
     draw.text((x, y), text, font=font, fill="white", stroke_width=0, stroke_fill="white")
