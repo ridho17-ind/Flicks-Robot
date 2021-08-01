@@ -30,8 +30,8 @@ from KanekiRobot.modules.disable import DisableAbleCommandHandler
 from KanekiRobot.modules.sql.global_bans_sql import is_user_gbanned
 from KanekiRobot.modules.sql.afk_sql import is_afk, check_afk_status
 from KanekiRobot.modules.sql.users_sql import get_user_num_chats
-from KanekiRobot.modules.helper_funcs.chat_status import sudo_plus
-from KanekiRobot.modules.helper_funcs.extraction import extract_user
+from KanekiRobot.modules.helper_funsc.chat_status import sudo_plus
+from KanekiRobot.modules.helper_funsc.extraction import extract_user
 from KanekiRobot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
 
 
