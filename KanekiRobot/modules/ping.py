@@ -6,7 +6,7 @@ from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, run_async
 
 from KanekiRobot import StartTime, dispatcher
-from KanekiRobot.modules.helper_funcs.chat_status import sudo_plus
+from KanekiRobot.modules.helper_funsc.chat_status import sudo_plus
 from KanekiRobot.modules.disable import DisableAbleCommandHandler
 
 sites_list = {
