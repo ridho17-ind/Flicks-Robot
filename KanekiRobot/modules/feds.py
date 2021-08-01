@@ -18,14 +18,14 @@ from KanekiRobot import (
     dispatcher,
 )
 from KanekiRobot.modules.disable import DisableAbleCommandHandler
-from KanekiRobot.modules.helper_funcs.alternate import send_message
-from KanekiRobot.modules.helper_funcs.chat_status import is_user_admin
-from KanekiRobot.modules.helper_funcs.extraction import (
+from KanekiRobot.modules.helper_funsc.alternate import send_message
+from KanekiRobot.modules.helper_funsc.chat_status import is_user_admin
+from KanekiRobot.modules.helper_funsc.extraction import (
     extract_unt_fedban,
     extract_user,
     extract_user_fban,
 )
-from KanekiRobot.modules.helper_funcs.string_handling import markdown_parser
+from KanekiRobot.modules.helper_funsc.string_handling import markdown_parser
 from telegram import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
