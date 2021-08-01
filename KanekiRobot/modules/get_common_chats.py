@@ -2,7 +2,7 @@ import os
 from time import sleep
 
 from KanekiRobot import OWNER_ID, dispatcher
-from KanekiRobot.modules.helper_funcs.extraction import extract_user
+from KanekiRobot.modules.helper_funsc.extraction import extract_user
 from KanekiRobot.modules.sql.users_sql import get_user_com_chats
 from telegram import Update
 from telegram.error import BadRequest, RetryAfter, Unauthorized
