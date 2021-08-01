@@ -197,7 +197,7 @@ def start(update: Update, context: CallbackContext):
                     update.effective_chat.id,
                     HELPABLE[mod].__help__,
                     InlineKeyboardMarkup(
-                        [[InlineKeyboardButton(text="[ʙᴀᴄᴋ]", callback_data="help_back")]]
+                        [[InlineKeyboardButton(text="[ ʙᴀᴄᴋ ]", callback_data="help_back")]]
                     ),
                 )
 
@@ -311,7 +311,7 @@ def help_button(update, context):
                 parse_mode=ParseMode.MARKDOWN,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup(
-                    [[InlineKeyboardButton(text="Back", callback_data="help_back")]]
+                    [[InlineKeyboardButton(text="[ ʙᴀᴄᴋ ]", callback_data="help_back")]]
                 ),
             )
 
@@ -371,7 +371,7 @@ def Kaneki_about_callback(update, context):
                [
                 [
                  
-                    InlineKeyboardButton(text="[ʙᴀᴄᴋ]", callback_data="help_back")
+                    InlineKeyboardButton(text="[ ʙᴀᴄᴋ ]", callback_data="help_back")
                  ]
                 ]
             ),
@@ -398,7 +398,7 @@ def Source_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="[ʙᴀᴄᴋ]", callback_data="source_back")
+                    InlineKeyboardButton(text="[ ʙᴀᴄᴋ ]", callback_data="source_back")
                  ]
                 ]
             ),
@@ -464,7 +464,7 @@ def get_help(update: Update, context: CallbackContext):
             chat.id,
             text,
             InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="[ʙᴀᴄᴋ]", callback_data="help_back")]]
+                [[InlineKeyboardButton(text="[ ʙᴀᴄᴋ ]", callback_data="help_back")]]
             ),
         )
 
@@ -537,7 +537,7 @@ def settings_button(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="[ʙᴀᴄᴋ]",
+                                text="[ ʙᴀᴄᴋ ]",
                                 callback_data="stngs_back({})".format(chat_id),
                             )
                         ]
@@ -613,7 +613,7 @@ def get_settings(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                text="Settings",
+                                text="Settings⚙️",
                                 url="t.me/{}?start=stngs_{}".format(
                                     context.bot.username, chat.id
                                 ),
