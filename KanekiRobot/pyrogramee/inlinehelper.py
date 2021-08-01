@@ -19,12 +19,12 @@ from pyrogram.types import (
 from Python_ARQ import ARQ
 from search_engine_parser import GoogleSearch
 
-from JisooX import BOT_USERNAME, OWNER_ID
-from JisooX.conf import get_str_key
-from JisooX.more.pluginhelpers import convert_seconds_to_minutes as time_convert
-from JisooX.more.pluginhelpers import fetch
-from JisooX.pyrogramee.pyrogram import pbot
-from JisooX import arq
+from KanekiRobot import BOT_USERNAME, OWNER_ID
+from KanekiRobot.conf import get_str_key
+from KanekiRobot.more.pluginhelpers import convert_seconds_to_minutes as time_convert
+from KanekiRobot.more.pluginhelpers import fetch
+from KanekiRobot.pyrogramee.pyrogram import pbot
+from KanekiRobot import arq
 
 SUDOERS = OWNER_ID
 
