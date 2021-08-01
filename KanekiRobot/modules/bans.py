@@ -16,7 +16,7 @@ from KanekiRobot import (
     dispatcher,
 )
 from KanekiRobot.modules.disable import DisableAbleCommandHandler
-from KanekiRobot.modules.helper_funcs.chat_status import (
+from KanekiRobot.modules.helper_funsc.chat_status import (
     bot_admin,
     can_restrict,
     connection_status,
@@ -27,8 +27,8 @@ from KanekiRobot.modules.helper_funcs.chat_status import (
     user_can_ban,
     can_delete,
 )
-from KanekiRobot.modules.helper_funcs.extraction import extract_user_and_text
-from KanekiRobot.modules.helper_funcs.string_handling import extract_time
+from KanekiRobot.modules.helper_funsc.extraction import extract_user_and_text
+from KanekiRobot.modules.helper_funsc.string_handling import extract_time
 from KanekiRobot.modules.log_channel import gloggable, loggable
 
 
