@@ -10,8 +10,8 @@ from KanekiRobot import (
     WOLVES,
     dispatcher,
 )
-from KanekiRobot.modules.helper_funcs.chat_status import dev_plus
-from KanekiRobot.modules.helper_funcs.extraction import (
+from KanekiRobot.modules.helper_funsc.chat_status import dev_plus
+from KanekiRobot.modules.helper_funsc.extraction import (
     extract_user,
     extract_user_and_text,
 )
