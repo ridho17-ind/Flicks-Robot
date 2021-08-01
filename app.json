@@ -1,5 +1,5 @@
 {
-      "name": "KanekiRobot",
+      "name": "Flicks-Robot",
       "description": "Telegram group management bot, Can help you to manage and maintain your group.",
       "logo": "https://telegra.ph/file/3534d0e0caadfe67ed22d.jpg",
       "keywords": [
@@ -9,7 +9,7 @@
          "manager",
          "Kaneki-ex"
       ],   
-   "repository": "https://github.com/rizkyoye/Kaneki-robot.git",
+   "repository": "https://github.com/ridho17-ind/Flicks-Robot.git",
    "addons": [
       {
          "options": {
