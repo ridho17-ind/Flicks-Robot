@@ -5,15 +5,15 @@ import time
 import KanekiRobot.modules.fun_strings as fun_strings
 from KanekiRobot import dispatcher
 from KanekiRobot.modules.disable import DisableAbleCommandHandler, DisableAbleMessageHandler
-from KanekiRobot.modules.helper_funcs.chat_status import is_user_admin
-from KanekiRobot.modules.helper_funcs.alternate import typing_action
-from KanekiRobot.modules.helper_funcs.filters import CustomFilters
-from KanekiRobot.modules.helper_funcs.extraction import extract_user
+from KanekiRobot.modules.helper_funsc.chat_status import is_user_admin
+from KanekiRobot.modules.helper_funsc.alternate import typing_action
+from KanekiRobot.modules.helper_funsc.filters import CustomFilters
+from KanekiRobot.modules.helper_funsc.extraction import extract_user
 from telegram import ChatPermissions, ParseMode, Update
 from telegram.error import BadRequest
 from telegram.ext import CallbackContext, run_async, CommandHandler, Filters
 
-import KanekiRobot.modules.helper_funcs.string_store as fun
+import KanekiRobot.modules.helper_funsc.string_store as fun
 
 GIF_ID = "CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE"
 
