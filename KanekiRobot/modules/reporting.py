@@ -1,7 +1,7 @@
 import html
 
 from KanekiRobot import LOGGER, DRAGONS, TIGERS, WOLVES, dispatcher
-from KanekiRobot.modules.helper_funcs.chat_status import user_admin, user_not_admin
+from KanekiRobot.modules.helper_funsc.chat_status import user_admin, user_not_admin
 from KanekiRobot.modules.log_channel import loggable
 from KanekiRobot.modules.sql import reporting_sql as sql
 from telegram import Chat, InlineKeyboardButton, InlineKeyboardMarkup, ParseMode, Update
