@@ -68,7 +68,7 @@ async def download_song(url):
     return song_name
 
 
-@Kaneki.on_message(filters.command("deezer"))
+@KanekiRobot.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
         await message.reply_text("Download Now Deezer")
@@ -122,7 +122,7 @@ async def download_song(url):
     return song_name
 
 
-@Kaneki.on_message(filters.command("deezer"))
+@KanekiRobot.on_message(filters.command("deezer"))
 async def deezer(_, message):
     if len(message.command) < 2:
         await message.reply_text("Download Now Deezer")
