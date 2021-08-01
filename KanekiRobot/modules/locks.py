@@ -12,7 +12,7 @@ from alphabet_detector import AlphabetDetector
 import KanekiRobot.modules.sql.locks_sql as sql
 from KanekiRobot import dispatcher, DRAGONS, LOGGER
 from KanekiRobot.modules.disable import DisableAbleCommandHandler
-from KanekiRobot.modules.helper_funcs.chat_status import (
+from KanekiRobot.modules.helper_funsc.chat_status import (
     can_delete,
     is_user_admin,
     user_not_admin,
@@ -22,7 +22,7 @@ from KanekiRobot.modules.helper_funcs.chat_status import (
 from KanekiRobot.modules.log_channel import loggable
 from KanekiRobot.modules.connection import connected
 from KanekiRobot.modules.sql.approve_sql import is_approved
-from KanekiRobot.modules.helper_funcs.alternate import send_message, typing_action
+from KanekiRobot.modules.helper_funsc.alternate import send_message, typing_action
 
 ad = AlphabetDetector()
 
