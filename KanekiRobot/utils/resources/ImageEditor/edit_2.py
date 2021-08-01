@@ -1,7 +1,7 @@
 import os
 import shutil
 
-import cv2
+import os
 import numpy as np
 from PIL import Image, ImageDraw, ImageEnhance
 
