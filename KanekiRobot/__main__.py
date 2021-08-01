@@ -87,11 +87,11 @@ buttons = [
     [
         InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="Kaneki_"),
         InlineKeyboardButton(
-            text="ᴄʜᴀɴɴᴇʟ", url=f"https://t.me/rizexproject"
+            text="ᴄʜᴀɴɴᴇʟ ɪɴғᴏ", url=f"https://t.me/rizexproject"
         ),
     ],
     [
-        InlineKeyboardButton(text="ɢʀᴏᴜᴘ", url=f"https://t.me/nyanyiisinii"),
+        InlineKeyboardButton(text="ɢʀᴏᴜᴘ sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/kanekisupport"),
         InlineKeyboardButton(
             text="ᴄʀᴇᴀᴛᴏʀ", url=f"https://t.me/rizexx"
         ),
