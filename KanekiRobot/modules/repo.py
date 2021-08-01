@@ -8,7 +8,7 @@ from KanekiRobot.utils.http import get
 @capture_err
 async def repo(_, message):
     users = await get(
-        "https://api.github.com/repos/rizkyoye/Kaneki-robot/contributors"
+        "https://api.github.com/repos/ridho17-ind/Flicks-Robot/contributors"
     )
     list_of_users = ""
     count = 1
@@ -18,12 +18,12 @@ async def repo(_, message):
         )
         count += 1
 
-    text = f"""[Bot](https://t.me/kanekiexbot) | [Support](https://t.me/kanekisupport)
+    text = f"""[Bot](https://t.me/FlicksManagerBot) | [Support](https://t.me/userbot_support_id)
 ```----------------
 | Contributors |
 ----------------```
 {list_of_users}
-[💾 Rizky ganteng ](https://github.com/rizkyoye/Kaneki-robot)"""
+[Repository](https://github.com/rizkyoye/Kaneki-robot)"""
     await app.send_message(
         message.chat.id, text=text, disable_web_page_preview=True
     )
