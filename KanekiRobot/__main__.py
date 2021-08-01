@@ -101,7 +101,7 @@ HELP_STRINGS = """
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ`[.](https://telegra.ph/file/3486eca568218cdb74f24.jpg)
 """
 
-KanekiRobot_IMG = "https://telegra.ph/file/3486eca568218cdb74f24.jpg"
+Kaneki_IMG = "https://telegra.ph/file/3486eca568218cdb74f24.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project [riz-ex](t.me/rizexx) \
@@ -119,7 +119,7 @@ CHAT_SETTINGS = {}
 USER_SETTINGS = {}
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("KanekiRobot.modules." + module_name)
+    imported_module = importlib.import_module("Kaneki.modules." + module_name)
     if not hasattr(imported_module, "__mod_name__"):
         imported_module.__mod_name__ = imported_module.__name__
 
@@ -347,9 +347,9 @@ def help_button(update, context):
 
 
 @run_async
-def kanekiRobot_about_callback(update, context):
+def Kaneki_about_callback(update, context):
     query = update.callback_query
-    if query.data == "kaneki":
+    if query.data == "Kaneki":
         query.message.edit_text(
             text="""  ɪ'ᴍ ᴋᴀɴᴇᴋɪ, ᴀ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ.
                  \n I can restrict users.
@@ -365,12 +365,12 @@ def kanekiRobot_about_callback(update, context):
                [
                 [
                  
-                    InlineKeyboardButton(text="[ʙᴀᴄᴋ]", callback_data="KanekiRobot_back")
+                    InlineKeyboardButton(text="[ʙᴀᴄᴋ]", callback_data="Kaneki_back")
                  ]
                 ]
             ),
         )
-    elif query.data == "kanekiRobot_back":
+    elif query.data == "Kaneki_back":
         query.message.edit_text(
                 PM_START_TEXT,
                 reply_markup=InlineKeyboardMarkup(buttons),
@@ -698,7 +698,7 @@ def main():
     settings_handler = CommandHandler("settings", get_settings)
     settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
 
-    about_callback_handler = CallbackQueryHandler(KanekiRobot_about_callback, pattern=r"KanekiRobot_")
+    about_callback_handler = CallbackQueryHandler(Kaneki_about_callback, pattern=r"Kaneki_")
     source_callback_handler = CallbackQueryHandler(Source_about_callback, pattern=r"source_")
 
     donate_handler = CommandHandler("donate", donate)
