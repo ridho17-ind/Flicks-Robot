@@ -13,12 +13,12 @@ from KanekiRobot import (
     WOLVES,
     dispatcher,
 )
-from KanekiRobot.modules.helper_funcs.chat_status import (
+from KanekiRobot.modules.helper_funsc.chat_status import (
     dev_plus,
     sudo_plus,
     whitelist_plus,
 )
-from KanekiRobot.modules.helper_funcs.extraction import extract_user
+from KanekiRobot.modules.helper_funsc.extraction import extract_user
 from KanekiRobot.modules.log_channel import gloggable
 from telegram import ParseMode, TelegramError, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
