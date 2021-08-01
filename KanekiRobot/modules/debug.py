@@ -6,7 +6,7 @@ from telegram import Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
 from KanekiRobot import telethn, dispatcher
-from KanekiRobot.modules.helper_funcs.chat_status import dev_plus
+from KanekiRobot.modules.helper_funsc.chat_status import dev_plus
 
 DEBUG_MODE = False
 
