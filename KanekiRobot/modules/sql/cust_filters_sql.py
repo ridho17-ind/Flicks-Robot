@@ -2,7 +2,7 @@ import threading
 
 from sqlalchemy import Column, String, UnicodeText, Boolean, Integer, distinct, func
 
-from KanekiRobot.modules.helper_funcs.msg_types import Types
+from KanekiRobot.modules.helper_funsc.msg_types import Types
 from KanekiRobot.modules.sql import BASE, SESSION
 
 
