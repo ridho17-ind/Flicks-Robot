@@ -30,16 +30,16 @@ from KanekiRobot import (
     sw,
     dispatcher,
 )
-from KanekiRobot.modules.helper_funcs.chat_status import (
+from KanekiRobot.modules.helper_funsc.chat_status import (
     is_user_admin,
     support_plus,
     user_admin,
 )
-from KanekiRobot.modules.helper_funcs.extraction import (
+from KanekiRobot.modules.helper_funsc.extraction import (
     extract_user,
     extract_user_and_text,
 )
-from KanekiRobot.modules.helper_funcs.misc import send_to_list
+from KanekiRobot.modules.helper_funsc.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
