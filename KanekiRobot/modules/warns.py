@@ -5,7 +5,7 @@ from typing import Optional
 import telegram
 from KanekiRobot import TIGERS, WOLVES, dispatcher
 from KanekiRobot.modules.disable import DisableAbleCommandHandler
-from KanekiRobot.modules.helper_funcs.chat_status import (
+from KanekiRobot.modules.helper_funsc.chat_status import (
     bot_admin,
     can_restrict,
     is_user_admin,
@@ -14,14 +14,14 @@ from KanekiRobot.modules.helper_funcs.chat_status import (
     user_admin_no_reply,
     can_delete,
 )
-from KanekiRobot.modules.helper_funcs.extraction import (
+from KanekiRobot.modules.helper_funsc.extraction import (
     extract_text,
     extract_user,
     extract_user_and_text,
 )
-from KanekiRobot.modules.helper_funcs.filters import CustomFilters
-from KanekiRobot.modules.helper_funcs.misc import split_message
-from KanekiRobot.modules.helper_funcs.string_handling import split_quotes
+from KanekiRobot.modules.helper_funsc.filters import CustomFilters
+from KanekiRobot.modules.helper_funsc.misc import split_message
+from KanekiRobot.modules.helper_funsc.string_handling import split_quotes
 from KanekiRobot.modules.log_channel import loggable
 from KanekiRobot.modules.sql import warns_sql as sql
 from telegram import (
