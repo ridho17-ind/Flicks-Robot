@@ -65,7 +65,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/KanekiRobot
-RUN git clone -b shiken https://github.com/rizkyoye/Kaneki-robot /root/Kaneki-robot
+RUN git clone -b shiken https://github.com/ridho17-ind/Flicks-Robot /root/Flicks-Robot
 WORKDIR /root/KanekiRobot
 
 #Copy config file to /root/KanekiRobot/KanekiRobot
