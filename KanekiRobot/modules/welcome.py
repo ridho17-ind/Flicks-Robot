@@ -7,7 +7,7 @@ from contextlib import suppress
 
 import KanekiRobot.modules.sql.welcome_sql as sql
 import KanekiRobot
-from Kaneki import (
+from KanekiRobot import (
     DEV_USERS,
     LOGGER,
     OWNER_ID,
