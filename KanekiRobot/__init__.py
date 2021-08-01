@@ -2,11 +2,13 @@ import logging
 import os
 import sys
 import time
+import aiohttp
 import spamwatch
 
 import telegram.ext as tg
 from pyrogram import Client, errors
 from telethon import TelegramClient
+from aiohttp import ClientSession
 
 StartTime = time.time()
 
@@ -191,6 +193,8 @@ else:
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient("kaneki", API_ID, API_HASH)
 pbot = Client("kanekipbot", api_id=API_ID, api_hash=API_HASH, bot_token=TOKEN)
+print("[INFO]: INITIALZING AIOHTTP SESSION")
+aiohttpsession = ClientSession()
 dispatcher = updater.dispatcher
 
 DRAGONS = list(DRAGONS) + list(DEV_USERS)
