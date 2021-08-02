@@ -356,7 +356,7 @@ def Kaneki_about_callback(update, context):
     query = update.callback_query
     if query.data == "Kaneki_":
         query.message.edit_text(
-            text="""  ɪ'ᴍ ᴋᴀɴᴇᴋɪ, ᴀ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ.
+            text="""  ᴀ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ.
                  \n I can restrict users.
                  \n I can greet users with customizable welcome messages and even set a group's rules.
                  \n I have an advanced anti-flood system.
@@ -390,8 +390,8 @@ def Source_about_callback(update, context):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" `heyo i'm kaneki`
-                 \nHere is the [Source Code](https://github.com/rizkyoye/Kaneki-robot) .""",
+            text=""" `heyo i'm flicks`
+                 \nHere is the [Source Code](https://github.com/ridho17-ind/Flicks-Robot) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
