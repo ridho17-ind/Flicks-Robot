@@ -72,7 +72,7 @@ __help__ = """
  Usage: hahaha just a magic.
  warning: you would be in trouble if you input any other value than mentioned.
  *Truth And Dare:*
-  - /Truth : for random truth.
+  - /truth : for random truth.
   - /dare : for random dare.
 """
 
