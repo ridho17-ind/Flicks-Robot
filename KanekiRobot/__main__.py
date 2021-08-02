@@ -102,15 +102,15 @@ buttons = [
 
 
 HELP_STRINGS = """
-`ʜᴀɪ, ɪ'ᴍ ᴋᴀɴᴇᴋɪ`
+`ʜᴀɪ`
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ`[.](https://telegra.ph/file/3486eca568218cdb74f24.jpg)
 """
 
-Kaneki_IMG = "https://telegra.ph/file/3486eca568218cdb74f24.jpg"
+Kaneki_IMG = "https://telegra.ph/file/3c16568ffc8bb284d6dc6.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [riz-ex](t.me/rizexx) \
- Supporting isnt always financial! [All about music](t.me/nyanyiisinii) \
+ You can support the project [Skyzo](t.me/XFLSkyzo) \
+ Supporting isnt always financial! [All about music](t.me/userbot_support_id) \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
 IMPORTED = {}
