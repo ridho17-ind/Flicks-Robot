@@ -23,7 +23,7 @@ async def repo(_, message):
 | Contributors |
 ----------------```
 {list_of_users}
-[❒ Repository ❒](https://github.com/rizkyoye/Kaneki-robot)"""
+[❒ Repository ❒](https://github.com/ridho17-ind/Flicks-Robot)"""
     await app.send_message(
         message.chat.id, text=text, disable_web_page_preview=True
     )
