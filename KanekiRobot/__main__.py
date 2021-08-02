@@ -74,9 +74,8 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-`**ʜᴀɪ,** **ɪ'ᴍ ᴋᴀɴᴇᴋɪ ᴀ ᴘᴏᴡᴇʀғᴜʟ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ ʙᴜɪʟᴛ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴇᴀsɪʟʏ.**`
-• `**ᴛʀʏ**` **/help** `**ᴛᴏ sᴇᴇ ᴛʜᴇ ғᴇᴀᴛᴜʀᴇs**`
-`**ᴍᴀɪɴᴛᴀɪɴᴇᴅ ʙʏ**` [Skyzo](https://t.me/XFLSkyzo)
+`Hey You, Im Manager And Music Player Bot`
+`Crated By` [Skyzo](https://t.me/XFLSkyzo)
 """
 
 buttons = [
