@@ -18,12 +18,12 @@ async def repo(_, message):
         )
         count += 1
 
-    text = f"""[Bot](https://t.me/FlicksManagerBot) | [Support](https://t.me/userbot_support_id)
+    text = f"""[Flicks Bot](https://t.me/FlicksManagerBot) | [Channel](https://t.me/SadRoomsInfo)
 ```----------------
 | Contributors |
 ----------------```
 {list_of_users}
-[Repository](https://github.com/rizkyoye/Kaneki-robot)"""
+[❒ Repository ❒](https://github.com/rizkyoye/Kaneki-robot)"""
     await app.send_message(
         message.chat.id, text=text, disable_web_page_preview=True
     )
