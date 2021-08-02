@@ -19,9 +19,9 @@ async def repo(_, message):
         count += 1
 
     text = f"""[Flicks Bot](https://t.me/FlicksManagerBot) | [Channel](https://t.me/SadRoomsInfo)
-```----------------
+**----------------
 | Contributors |
-----------------```
+----------------**
 {list_of_users}
 [❒ Repository ❒](https://github.com/ridho17-ind/Flicks-Robot)"""
     await app.send_message(
