@@ -64,7 +64,7 @@ def no_longer_afk(update: Update, context: CallbackContext):
                 "{} Abis Nonton Pasti",
                 "{} Lord Kembali Online",
                 "{} Wapada Orang Goodloking Lagi Online",
-                "Selamat Datang Kembali Lord! {}",
+                "Selamat Datang Kembali Lord {}",
                 "Kemana Si {}?\nDia Abis Ngent",
             ]
             chosen_option = random.choice(options)
